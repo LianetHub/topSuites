@@ -1,7 +1,8 @@
 //============ МОДУЛИ ====================
-@import "modules/popup";
-@import "modules/breadcrumbs";
-@import "modules/animation";
+@import 'modules/popup';
+@import 'modules/breadcrumbs';
+@import 'modules/select';
+@import 'modules/animation';
 
 //============ МОДУЛИ ====================
 
@@ -97,7 +98,7 @@
 			}
 		}
 		&::after {
-			content: "";
+			content: '';
 			flex: 1 1 auto;
 			width: 100%;
 			height: 1px;
@@ -255,7 +256,7 @@
 				display: block;
 			}
 		}
-		&[aria-disabled="true"] {
+		&[aria-disabled='true'] {
 			pointer-events: none;
 			opacity: 0.5;
 		}
@@ -315,7 +316,7 @@
 
 ._loading {
 	&::after {
-		content: "";
+		content: '';
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -326,7 +327,7 @@
 		z-index: 2;
 	}
 	&::before {
-		content: "";
+		content: '';
 		position: absolute;
 		top: 50%;
 		left: 50%;

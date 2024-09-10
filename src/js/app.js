@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     devFunctions.formSubmit();
     devFunctions.intInputMask();
     devFunctions.animation();
+    devFunctions.select()
 
 
     // init Fancybox Gallery

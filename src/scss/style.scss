@@ -1,24 +1,25 @@
 // Использование модулей SASS
-@use "sass:math";
+@use 'sass:math';
 // Использование модулей SASS
 // ======================================МИКСИНЫ==============================================
-@import "mixins";
+@import 'mixins';
 // ======================================МИКСИНЫ==============================================
 
 // ======================================ШРИФТЫ===============================================
 
 // &display=swap&subset=cyrillic-ext
-@import "fonts";
+@import 'fonts';
 
 // ======================================ШРИФТЫ===============================================
 // ======================================ИКОНОЧНЫЙ ШРИФТ======================================
-@import "icons";
+@import 'icons';
 
 // ======================================ИКОНОЧНЫЙ ШРИФТ======================================
 
 // Шрифт по умолчанию
-$fontfamily: "PlusJakartaSans";
-$font-cabinet: "CabinetGrotesk";
+$fontfamily: 'PlusJakartaSans';
+$font-cabinet: 'CabinetGrotesk';
+$font-raleway: 'Raleway';
 
 // Шрифт по умолчанию
 
@@ -59,6 +60,9 @@ $ui-index-6: 6; // Для элементов, перекрывающих все
 //ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ
 body {
 	font-family: $fontfamily, sans-serif;
+	&.font-raleway {
+		font-family: $font-raleway, sans-serif;
+	}
 	color: #fff;
 	background: #0c1621;
 	min-width: 320px;
@@ -119,7 +123,7 @@ body {
 //=============== ОСНОВНАЯ СЕТКА===============================
 
 // Отзывчивая
-[class*="__container"] {
+[class*='__container'] {
 	margin: 0 auto;
 	box-sizing: content-box;
 	max-width: 100%;
@@ -142,11 +146,11 @@ body {
 
 //=================Подключаем файлы стилей
 //================Общий файл для элементов страницы
-@import "ui";
-@import "forms";
+@import 'ui';
+@import 'forms';
 //================Общий файл для элементов страницы
-@import "header";
-@import "footer";
+@import 'header';
+@import 'footer';
 //=======================================
 
 // =======================ОСНОВНОЙ БЛОК==================
@@ -156,10 +160,10 @@ body {
 }
 // ========================================================
 
-@import "pages/home";
-@import "pages/gallery";
-@import "pages/blog";
-@import "pages/contacts";
-@import "pages/about";
-@import "pages/error";
-@import "pages/privacy";
+@import 'pages/home';
+@import 'pages/gallery';
+@import 'pages/blog';
+@import 'pages/contacts';
+@import 'pages/about';
+@import 'pages/error';
+@import 'pages/privacy';

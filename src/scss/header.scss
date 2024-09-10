@@ -18,7 +18,7 @@
 			position: relative;
 			margin-bottom: -100%;
 			&::before {
-				content: "";
+				content: '';
 				position: absolute;
 				bottom: 0;
 				left: 50%;
@@ -47,23 +47,23 @@
 		padding: 0.75rem 0;
 		align-items: center;
 		@media (min-width: $md4) {
+			gap: 1rem;
 			align-items: stretch;
 			padding: 1.25rem 0;
 		}
 		@media (min-width: $md3) {
+			flex-wrap: wrap;
 			gap: 1.5rem;
 			padding: 1.45rem 0 1.85rem;
 		}
 		@media (min-width: $md1) {
 			align-items: center;
+			flex-wrap: nowrap;
 			padding: 1.1rem 0 1.85rem;
 		}
 	}
 	// .header__logo
 	&__logo {
-		// font-size: 1.375rem;
-		// font-weight: 800;
-		// text-transform: uppercase;
 		flex: 0 0 rem(108);
 		@media (min-width: $md5) {
 			flex: 0 0 rem(134);
@@ -74,7 +74,6 @@
 	&__contacts {
 		display: none;
 		@media (min-width: $md4) {
-			margin-left: auto;
 			display: flex;
 			flex-wrap: wrap;
 			row-gap: 0.25rem;
@@ -82,6 +81,11 @@
 			justify-content: flex-end;
 			align-items: center;
 			flex-direction: row;
+			order: 1;
+		}
+		@media (min-width: $md1) {
+			margin-left: auto;
+			order: 0;
 		}
 	}
 	// .header__contact
@@ -129,6 +133,12 @@
 			}
 		}
 	}
+	&__dropdown {
+		transition-delay: 550ms !important;
+		@media (max-width: $md5) {
+			display: none;
+		}
+	}
 }
 
 .menu {
@@ -158,6 +168,7 @@
 		transition: none;
 		opacity: 1;
 		visibility: visible;
+		align-self: flex-start;
 	}
 	@media (min-width: $md2) {
 		padding: 0 rem(60);
@@ -184,7 +195,6 @@
 			overflow-y: visible;
 			overflow-x: visible;
 			transition: none;
-			padding: 0;
 			background: none;
 			color: inherit;
 			transform: none;
@@ -192,6 +202,10 @@
 			height: auto;
 			min-height: auto;
 			margin-left: 0;
+			padding: 0;
+		}
+		@media (min-width: $md1) {
+			padding: rem(12) 0;
 		}
 	}
 	// .menu__list
@@ -234,7 +248,7 @@
 				color: $yellow;
 			}
 			&::before {
-				content: "";
+				content: '';
 				position: absolute;
 				left: 50%;
 				transform: translateX(-50%);
@@ -303,6 +317,12 @@
 			font-size: 1.125rem;
 		}
 	}
+	&__dropdown {
+		margin-top: 2rem;
+		@media (min-width: $md4) {
+			display: none;
+		}
+	}
 }
 
 .icon-menu {
@@ -316,6 +336,7 @@
 	height: rem(40);
 	z-index: 12;
 	color: #ffeab4;
+	order: 1;
 	@media (min-width: $md3) {
 		display: none;
 	}
@@ -325,7 +346,7 @@
 		transition: transform 0.4s ease 0.4s, opacity 0.4s ease 0.4s;
 		will-change: transform;
 		&::before {
-			content: "";
+			content: '';
 			display: block;
 			height: rem(2);
 			width: rem(42);
