@@ -1,0 +1,54 @@
+<section id="feedback" class="feedback">
+    <div class="feedback__container">
+        <div class="feedback__body" data-form-body>
+            <h2 class="feedback__title title title-xl" data-animate="bottom">
+                Book a consultation
+            </h2>
+            <p class="feedback__subtitle title-sm" data-animate="bottom">Our consultant will contact you and answer all your questions</p>
+            <form action="#" class="feedback__form form">
+                <div class="form__grid">
+                    <div class="form__row" data-animate="bottom">
+                        <label class="form__field">
+                            <input type="text" name="name" data-required class="form__input" placeholder="">
+                            <span class="form__field-placeholder">Your name</span>
+                        </label>
+                        <span class="form__error">Enter correct name</span>
+                    </div>
+                    <div class="form__row" data-animate="bottom">
+                        <label class="form__field">
+                            <input type="tel" name="phone" data-required class="form__input" placeholder="">
+                            <span class="form__field-placeholder">Phone</span>
+                        </label>
+                        <span class="form__error">Enter correct phone number</span>
+                    </div>
+                    <div class="form__row" data-animate="bottom">
+                        <label class="form__field">
+                            <input type="email" name="email" data-required class="form__input" placeholder="">
+                            <span class="form__field-placeholder">Email</span>
+                        </label>
+                        <span class="form__error">Enter correct email address</span>
+                    </div>
+                    <div class="form__row row-lg" data-animate="bottom">
+                        <textarea name="message" class="form__textarea" placeholder="Tell us a little bit about the task"></textarea>
+                    </div>
+                </div>
+                <div class="form__footer" data-animate="bottom">
+                    <label class="form__checkbox">
+                        <input type="checkbox" checked data-required name="privacy" class="form__checkbox-input hidden" hidden>
+                        <span class="form__checkbox-content">I have read and agree to the <a href="/privacy.html" class="form__privacy-link">Privacy Policy</a></span>
+                    </label>
+                    <button type="submit" class="form__footer-btn btn btn-secondary">Send</button>
+                </div>
+            </form>
+        </div>
+        <div data-form-succes class="feedback__succes">
+            <h2 class="feedback__title title title-xl">
+                Thank you!
+            </h2>
+            <p class="feedback__subtitle title-sm">We’re already recived your request and comming to you as soon as possible </p>
+        </div>
+        <div class="feedback__image" data-animate="bottom">
+            <img src="@img/consult.jpg" class="cover-image" alt="consult">
+        </div>
+    </div>
+</section>

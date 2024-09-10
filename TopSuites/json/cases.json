@@ -1,0 +1,43 @@
+[
+    {
+        "status": false,
+        "galleryData": [
+            {
+                "galleryCaption": "gallery loaded title",
+                "galleryItems": [
+                    "img/gallery/15.jpg",
+                    "img/gallery/02.jpg",
+                    "img/gallery/03.jpg",
+                    "img/gallery/04.jpg",
+                    "img/gallery/05.jpg",
+                    "img/gallery/06.jpg",
+                    "img/gallery/07.jpg"
+                ]
+            },
+            {
+                "galleryCaption": "gallery loaded title 2",
+                "galleryItems": [
+                    "img/gallery/15.jpg",
+                    "img/gallery/02.jpg",
+                    "img/gallery/03.jpg",
+                    "img/gallery/04.jpg",
+                    "img/gallery/05.jpg",
+                    "img/gallery/06.jpg",
+                    "img/gallery/07.jpg"
+                ]
+            },
+            {
+                "galleryCaption": "gallery loaded title 3",
+                "galleryItems": [
+                    "img/gallery/15.jpg",
+                    "img/gallery/02.jpg",
+                    "img/gallery/03.jpg",
+                    "img/gallery/04.jpg",
+                    "img/gallery/05.jpg",
+                    "img/gallery/06.jpg",
+                    "img/gallery/07.jpg"
+                ]
+            }
+        ]
+    }
+]

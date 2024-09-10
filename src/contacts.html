@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('html/_head.html', { 'title': 'TopSuites | Contacts' })
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            "active": 7,
+            "shelude": false,
+            "className": ""
+            })
+            <main class="page">
+                <nav aria-label="breadcrumbs menu" class="breadcrumbs">
+                    <div class="breadcrumbs__container container">
+                        <ul class="breadcrumbs__items">
+                            <li class="breadcrumbs__item">
+                                <a href="/" class="breadcrumbs__link">Home</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <span class="breadcrumbs__link active">Contacts</span>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <section class="contacts">
+                    <div class="contacts__container">
+                        <h1 class="contacts__title title-xl">Contacts</h1>
+                        <div class="contacts__body">
+                            <div class="contacts__main">
+                                <div class="contacts__main-block icon-phone">
+                                    <a href="tel:+971585368817" class="contacts__main-link">+971 58 536 8817</a>
+                                    <p class="contacts__main-subtitle">Answer all your questions</p>
+                                </div>
+                                <div class="contacts__main-block icon-mail">
+                                    <a href="mailto:sales@topsuites.ae" class="contacts__main-link">sales@topsuites.ae</a>
+                                    <p class="contacts__main-subtitle">Answer all your questions</p>
+                                </div>
+                                <div class="contacts__main-block icon-telegram mobile-only">
+                                    <a href="https://t.me/@topsuits" class="contacts__main-link">@topsuits</a>
+                                    <p class="contacts__main-subtitle">To connect with us on Telegram</p>
+                                </div>
+                                <div class="contacts__qr">
+                                    <div class="contacts__qr-code">
+                                        <img src="@img/QR.png" alt="QR">
+                                    </div>
+                                    <div class="contacts__qr-text">
+                                        Hover over the camera to connect&nbsp;with us on Telegram
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contacts__feedback">
+                                <form action="#" class="contacts__form form" data-form-body>
+                                    <div class="form__title" data-animate="bottom">
+                                        Book a consultation
+                                    </div>
+                                    <p class="form__subtitle" data-animate="bottom">
+                                        Our consultant will contact you and answer all your questions
+                                    </p>
+                                    <div class="form__grid form__grid-sm">
+                                        <div class="form__row" data-animate="bottom">
+                                            <label class="form__field">
+                                                <input type="text" name="name" data-required class="form__input" placeholder="">
+                                                <span class="form__field-placeholder">Your name</span>
+                                            </label>
+                                            <span class="form__error">Enter correct name</span>
+                                        </div>
+                                        <div class="form__row" data-animate="bottom">
+                                            <label class="form__field">
+                                                <input type="tel" name="phone" data-required class="form__input" placeholder="">
+                                                <span class="form__field-placeholder">Phone</span>
+                                            </label>
+                                            <span class="form__error">Enter correct phone number</span>
+                                        </div>
+                                        <div class="form__row" data-animate="bottom">
+                                            <label class="form__field">
+                                                <input type="email" name="email" data-required class="form__input" placeholder="">
+                                                <span class="form__field-placeholder">Email</span>
+                                            </label>
+                                            <span class="form__error">Enter correct email address</span>
+                                        </div>
+                                        <div class="form__row row-lg" data-animate="bottom">
+                                            <textarea name="message" class="form__textarea" placeholder="Tell us a little bit about the task"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form__footer" data-animate="bottom">
+                                        <label class="form__checkbox form__checkbox-white">
+                                            <input type="checkbox" checked data-required name="privacy" class="form__checkbox-input hidden" hidden>
+                                            <span class="form__checkbox-content">I have read and agree to the <a href="" class="form__privacy-link">Privacy Policy</a></span>
+                                        </label>
+                                        <button type="submit" class="form__footer-btn btn btn-primary btn-sm">Send</button>
+                                    </div>
+                                </form>
+                                <div data-form-succes class="contacts__succes">
+                                    <h2 class="contacts__succes-title">
+                                        Thank you!
+                                    </h2>
+                                    <p class="contacts__subtitle">We’re already recived your request and comming to you as soon as possible </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            @@include('html/_footer.html', {})
+        </div>
+        @@include('html/_js.html', {})
+    </body>
+</html>

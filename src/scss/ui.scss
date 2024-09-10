@@ -1,0 +1,418 @@
+//============ МОДУЛИ ====================
+@import "modules/popup";
+@import "modules/breadcrumbs";
+@import "modules/animation";
+
+//============ МОДУЛИ ====================
+
+.title-xl {
+	line-height: 1.2;
+	font-weight: 300;
+	font-size: rem(36);
+	@media (min-width: $md4) {
+		font-weight: 200;
+		font-size: rem(64);
+	}
+	@media (min-width: $md3) {
+		font-weight: 300;
+		font-size: rem(84);
+	}
+	& a {
+		transition: color 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				color: $yellow;
+			}
+		}
+	}
+}
+.title-lg {
+	font-size: 2.25rem;
+	@media (min-width: $md4) {
+		font-size: rem(56);
+	}
+	@media (min-width: $md2) {
+		font-size: rem(64);
+	}
+	font-weight: 200;
+	line-height: 1.2;
+}
+.title-lg-desktop {
+	font-size: 1.5rem;
+	line-height: 1.4;
+	@media (min-width: $md4) {
+		font-weight: 300;
+		font-size: 2.25rem;
+		line-height: 1.2;
+	}
+	@media (min-width: $md2) {
+		font-size: rem(64);
+		font-weight: 200;
+	}
+}
+.title-md {
+	line-height: 1.6;
+	font-size: rem(18);
+	font-weight: 600;
+	@media (min-width: $md4) {
+		font-weight: 300;
+		line-height: 1.2;
+		font-size: rem(36);
+	}
+}
+.title-sm {
+	font-size: 0.875rem;
+	font-weight: 500;
+	line-height: 1.6;
+	@media (min-width: $md4) {
+		font-size: 1.25rem;
+		line-height: 1.2;
+		font-weight: 600;
+	}
+	@media (min-width: $md2) {
+		font-weight: 400;
+		line-height: 1.4;
+		font-size: rem(24);
+	}
+}
+
+.props-list {
+	&__heading {
+		font-weight: 500;
+		line-height: 1.6;
+		font-size: 0.875rem;
+		margin-bottom: 0.75rem;
+		@media (min-width: $md4) {
+			display: none;
+		}
+	}
+	&__item {
+		display: flex;
+		justify-content: space-between;
+		line-height: 1.6;
+		&:not(:last-child) {
+			margin-bottom: 0.15rem;
+			@media (min-width: $md4) {
+				margin-bottom: 0.27rem;
+			}
+		}
+		&::after {
+			content: "";
+			flex: 1 1 auto;
+			width: 100%;
+			height: 1px;
+			border-bottom: 1px dotted;
+			border-color: #fff;
+			align-self: flex-end;
+			margin: 0 0.25rem 0.5rem;
+		}
+		&.selected {
+			color: $yellow;
+			.props-list__caption {
+				color: $yellow;
+			}
+			&::after {
+				border-color: currentColor;
+			}
+		}
+	}
+	&__item-caption {
+		line-height: 1;
+		font-weight: 600;
+		margin-bottom: rem(12);
+		font-size: rem(12);
+		margin-top: rem(29);
+		@media (min-width: $md4) {
+			margin-top: rem(22);
+			font-size: rem(14);
+			font-weight: 700;
+			margin-bottom: rem(11);
+		}
+	}
+	&__caption {
+		order: -1;
+		white-space: nowrap;
+		font-size: 0.75rem;
+		color: #9aa2a9;
+		@media (min-width: $md4) {
+			color: inherit;
+			font-size: 0.875rem;
+		}
+	}
+	&__value {
+		font-weight: 500;
+		order: 1;
+		white-space: nowrap;
+		font-size: 0.75rem;
+		@media (min-width: $md4) {
+			font-size: 1rem;
+		}
+	}
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+	font-size: 2rem;
+	@media (min-width: $md4) {
+		font-size: 4rem;
+	}
+	transition: color 0.3s ease 0s;
+	&::before {
+		@extend %ic;
+		color: currentColor;
+	}
+	&::after {
+		display: none;
+	}
+	@media (any-hover: hover) {
+		&:hover {
+			color: $yellow;
+		}
+	}
+}
+.swiper-button-next {
+	&::before {
+		@extend .icon-right;
+	}
+}
+.swiper-button-prev {
+	&::before {
+		@extend .icon-left;
+	}
+}
+
+.pc-only {
+	display: none;
+	@media (min-width: $md5) {
+		display: block;
+	}
+}
+
+.mobile-only {
+	@media (min-width: $md4) {
+		display: none;
+	}
+}
+
+.map {
+	margin-top: 7.5rem;
+	@media (min-width: $md2) {
+		margin-top: 8.75rem;
+	}
+	background: $beige;
+	height: rem(500);
+}
+
+[data-form-succes] {
+	&:not(.visible) {
+		display: none;
+	}
+}
+
+.pagination {
+	display: flex;
+	justify-content: center;
+	gap: 0.63rem;
+	// .pagination__btn
+	&__btn {
+		line-height: 1.6;
+		font-size: 1.5rem;
+		@media (min-width: $md4) {
+			font-size: 1.125rem;
+			padding: 0.75rem 0.88rem;
+		}
+		&:first-child {
+			@media (min-width: $md4) {
+				margin-right: 1.87rem;
+			}
+			&::before {
+				@extend %ic, .icon-left;
+			}
+		}
+		&:last-child {
+			@media (min-width: $md4) {
+				margin-left: 1.87rem;
+			}
+			&::before {
+				@extend %ic, .icon-right;
+			}
+		}
+		color: #9aa2a9;
+		transition: color 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				color: #ffeab4;
+			}
+		}
+		&::before {
+			@media (min-width: $md4) {
+				display: none;
+			}
+		}
+		& span {
+			display: none;
+			@media (min-width: $md4) {
+				display: block;
+			}
+		}
+		&[aria-disabled="true"] {
+			pointer-events: none;
+			opacity: 0.5;
+		}
+	}
+	// .pagination__item
+	&__item {
+		justify-content: center;
+		align-items: center;
+		display: none;
+		width: 2.5rem;
+		height: 2.5rem;
+		font-size: 0.66575rem;
+		@media (min-width: $md4) {
+			width: 2.875rem;
+			height: 2.875rem;
+			font-size: 0.875rem;
+			display: flex;
+		}
+		@media (min-width: $md2) {
+			font-size: 1rem;
+			width: 3.5rem;
+			height: 3.5rem;
+		}
+		flex-shrink: 0;
+
+		border-radius: 50%;
+		border: 1px solid rgba($color: #fff, $alpha: 0.3);
+		color: #fff;
+		&[href] {
+			transition: border-color 0.3s ease 0s, background-color 0.3s ease 0s, color 0.3s ease 0s;
+			@media (any-hover: hover) {
+				&:hover {
+					border-color: $yellow;
+					background: $yellow;
+					color: $text;
+				}
+			}
+		}
+		&.active {
+			border-color: $yellow;
+			background: $yellow;
+			color: $text;
+			display: flex;
+			& + * {
+				display: flex;
+				& + * {
+					display: flex;
+				}
+			}
+			& ~ :nth-last-child(2),
+			& ~ :nth-last-child(3) {
+				display: flex;
+			}
+		}
+	}
+}
+
+._loading {
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: inherit;
+		background: inherit;
+		z-index: 2;
+	}
+	&::before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 20px;
+		height: 20px;
+		border: 3px solid currentColor;
+		border-bottom-color: transparent;
+		border-radius: 50%;
+		transform-origin: center;
+		animation: rotation 1s linear infinite;
+		z-index: 3;
+	}
+}
+
+@keyframes rotation {
+	0% {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+	100% {
+		transform: translate(-50%, -50%) rotate(360deg);
+	}
+}
+
+//============ ОБЩИЕ ЭЛЕМЕНТЫ ============
+
+// Стилизация селекта
+// $selectBg: $orange;
+// $selectColor: $text;
+
+// ::-moz-selection {
+// 	color: $selectColor;
+// 	background-color: $selectBg;
+// 	box-shadow: none;
+// }
+// ::selection {
+// 	color: $selectColor;
+// 	background-color: $selectBg;
+// 	-webkit-box-shadow: none;
+// 	box-shadow: none;
+// }
+// ::-moz-selection {
+// 	color: $selectColor;
+// 	background-color: $selectBg;
+// 	box-shadow: none;
+// }
+
+// Стилизация скролла
+
+$scrollbarColor: $yellow;
+$scrollbarHover: darken(
+	$color: $scrollbarColor,
+	$amount: 10,
+);
+
+::-webkit-scrollbar {
+	width: rem(8);
+}
+::-webkit-scrollbar-track {
+	background: #fff;
+}
+::-webkit-scrollbar-thumb {
+	background: $scrollbarColor;
+	border-radius: rem(8);
+	@media (any-hover: hover) {
+		&:hover {
+			background: $scrollbarHover;
+		}
+	}
+}
+
+//============ ОБЩИЕ ЭЛЕМЕНТЫ ============
+
+// ========== ВСПОМОГАТЕЛЬНЫЕ КЛАССЫ ======
+.hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+}
+
+.cover-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+// ========== ВСПОМОГАТЕЛЬНЫЕ КЛАССЫ ======

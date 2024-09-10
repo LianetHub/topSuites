@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('html/_head.html', { 'title': 'TopSuites | Services' })
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            "active": 3,
+            "shelude": false,
+            "className": ""
+            })
+            <main class="page">
+                <nav aria-label="breadcrumbs menu" class="breadcrumbs">
+                    <div class="breadcrumbs__container container">
+                        <ul class="breadcrumbs__items">
+                            <li class="breadcrumbs__item">
+                                <a href="/" class="breadcrumbs__link">Home</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <span class="breadcrumbs__link active">Services</span>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <section class="services services-sm">
+                    <div class="services__container">
+                        <div class="services__header">
+                            <h2 class="services__title title-xl" data-animate="bottom">
+                                Services
+                            </h2>
+                        </div>
+                        <div class="services__grid">
+                            <a href="#modal" data-fancybox class="service" data-params="service_id: 12, param_name: prop1, param_long_name: prop2" data-animate="bottom">
+                                <span class="service__image">
+                                    <img src="@img/services/01.jpg" class="cover-image" alt="service image">
+                                </span>
+                                <span class="service__desc">
+                                    Pre-buying real estate analysis upon client's request
+                                </span>
+                            </a>
+                            <a href="#modal" data-fancybox class="service" data-params="service_id: 13, param_name: prop3, param_long_name: prop222" data-animate="bottom">
+                                <span class="service__image">
+                                    <img src="@img/services/02.jpg" class="cover-image" alt="service image">
+                                </span>
+                                <span class="service__desc">
+                                    Full support from payment to&nbsp;keys&nbsp;handover
+                                </span>
+                            </a>
+                            <a href="#modal" data-fancybox class="service" data-params="service_id: 14, param_name: prop2121, param_long_name: prop122" data-animate="bottom">
+                                <span class="service__image">
+                                    <img src="@img/services/03.jpg" class="cover-image" alt="service image">
+                                </span>
+                                <span class="service__desc">
+                                    Apartment fit-out/ <br> renovation
+                                </span>
+                            </a>
+                            <a href="#modal" data-fancybox class="service" data-params="service_id: 15, param_name: prop4421, param_long_name: prop21212" data-animate="bottom">
+                                <span class="service__image">
+                                    <img src="@img/services/05.jpg" class="cover-image" alt="service image">
+                                </span>
+                                <span class="service__desc">
+                                    Short-term or long-<br>term rental
+                                </span>
+                            </a>
+                            <a href="#modal" data-fancybox class="service" data-params="service_id: 16, param_name: dsdsd, param_long_name: 4r12d" data-animate="bottom">
+                                <span class="service__image">
+                                    <img src="@img/services/04.jpg" class="cover-image" alt="service image">
+                                </span>
+                                <span class="service__desc service__desc-lg">
+                                    Sale of the apartment through&nbsp;our chain of brokers
+                                </span>
+                            </a>
+                            <a href="#modal" data-fancybox data-params="service_id: 17, param_name: dsds1212, param_long_name: 121dsds" class="service service-blur" data-animate="bottom">
+                                <span class="service__icon">
+                                    <img src="@img/hand.svg" alt="icon hand">
+                                </span>
+                                <span class="service__desc">
+                                    We able to provide
+                                    consultation&nbsp;or&nbsp;perform a service
+                                    upon your request
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                @@include('html/_feedback.html', {})
+            </main>
+            @@include('html/_footer.html', {})
+        </div>
+        @@include('html/_modal.html', {})
+        @@include('html/_js.html', {})
+    </body>
+</html>

@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('html/_head.html', { 'title': 'TopSuites | Cases' })
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            "active": 4,
+            "shelude": false,
+            "className": ""
+            })
+            <main class="page">
+                <nav aria-label="breadcrumbs menu" class="breadcrumbs">
+                    <div class="breadcrumbs__container container">
+                        <ul class="breadcrumbs__items">
+                            <li class="breadcrumbs__item">
+                                <a href="/" class="breadcrumbs__link">Home</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <span class="breadcrumbs__link active">Cases</span>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <section class="cases">
+                    <div class="cases__container">
+                        <h1 class="cases__title title-xl" data-animate="bottom">
+                            Cases
+                        </h1>
+                        <ul class="cases__list">
+                            <li class="cases__item">
+                                <div class="cases__item-header">
+                                    <div class="cases__item-info">
+                                        <h2 class="cases__item-caption" data-animate="bottom">
+                                            The Bay Apartments
+                                        </h2>
+                                        <p class="cases__item-desc" data-animate="bottom">
+                                            A stunning 1-bedroom apartment in The Bay with a purchase price of 1,118,000 AED. After a tasteful furnishing, investment of 60,000 AED, it was successfully sold for 1,350,000 AED, offering a remarkable ROI of 14.5%. Rental options include unfurnished at 85,000 AED/year and furnished at 120,000 AED/year.
+                                        </p>
+                                        <a href="#modal" data-fancybox class="cases__item-btn btn btn-primary btn-sm icon-plus" data-animate="bottom">Get a Quote</a>
+                                    </div>
+                                    <ul class="cases__item-props props-list" data-animate="bottom">
+                                        <li class="props-list__heading">Property information</li>
+                                        <li class="props-list__item">
+                                            <div class="props-list__caption">
+                                                Purchase price
+                                            </div>
+                                            <div class="props-list__value">
+                                                1,118,000
+                                            </div>
+                                        </li>
+                                        <li class="props-list__item">
+                                            <div class="props-list__caption">
+                                                Furnishing
+                                            </div>
+                                            <div class="props-list__value">
+                                                60,000
+                                            </div>
+                                        </li>
+                                        <li class="props-list__item">
+                                            <div class="props-list__caption">
+                                                Unfurnished sell price
+                                            </div>
+                                            <div class="props-list__value">
+                                                1,190,000
+                                            </div>
+                                        </li>
+                                        <li class="props-list__item">
+                                            <div class="props-list__caption">
+                                                Sell price
+                                            </div>
+                                            <div class="props-list__value">
+                                                1,350,000
+                                            </div>
+                                        </li>
+                                        <li class="props-list__item selected">
+                                            <div class="props-list__caption">
+                                                ROI
+                                            </div>
+                                            <div class="props-list__value">
+                                                14.5 %
+                                            </div>
+                                        </li>
+                                        <li class="props-list__item-caption">
+                                            Rental opportunities
+                                        </li>
+                                        <li class="props-list__item">
+                                            <div class="props-list__caption">
+                                                Unfurnished
+                                            </div>
+                                            <div class="props-list__value">
+                                                85,000
+                                            </div>
+                                        </li>
+                                        <li class="props-list__item">
+                                            <div class="props-list__caption">
+                                                Furnished
+                                            </div>
+                                            <div class="props-list__value">
+                                                120,000
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div data-animate="bottom" class="cases__item-slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/01.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/02.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/03.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/01.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/02.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/03.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/01.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/02.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/03.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/01.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/02.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/03.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/01.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/02.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/03.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/01.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/02.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/03.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/01.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/02.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/03.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/01.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/02.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cases__item-prev swiper-button-prev"></div>
+                                    <div class="cases__item-next swiper-button-next"></div>
+                                    <div class="cases__item-pagination swiper-pagination"></div>
+                                    <div class="cases__item-bullets swiper-pagination"></div>
+                                </div>
+                            </li>
+                            <li class="cases__item">
+                                <div class="cases__item-header">
+                                    <div class="cases__item-info">
+                                        <h2 class="cases__item-caption" data-animate="bottom">
+                                            Port De La Mer
+                                        </h2>
+                                        <p class="cases__item-desc" data-animate="bottom">
+                                            Experience luxury in this 2-bedroom gem located in Port De La Mer. Purchased for 2,899,000 AED, it boasts a stylish furnishing investment of 85,000 AED. The unfurnished property's value stands at an impressive 3,200,000 AED, with a projected sell price of 4,000,000 AED, resulting in a remarkable ROI of 34%.
+                                        </p>
+                                        <a href="#modal" data-fancybox class="cases__item-btn btn btn-primary btn-sm icon-plus" data-animate="bottom">Get a Quote</a>
+                                    </div>
+                                    <ul class="cases__item-props props-list" data-animate="bottom">
+                                        <li class="props-list__heading">Property information</li>
+                                        <li class="props-list__item">
+                                            <div class="props-list__caption">
+                                                Purchase price
+                                            </div>
+                                            <div class="props-list__value">
+                                                1,118,000
+                                            </div>
+                                        </li>
+                                        <li class="props-list__item">
+                                            <div class="props-list__caption">
+                                                Furnishing
+                                            </div>
+                                            <div class="props-list__value">
+                                                60,000
+                                            </div>
+                                        </li>
+                                        <li class="props-list__item">
+                                            <div class="props-list__caption">
+                                                Unfurnished sell price
+                                            </div>
+                                            <div class="props-list__value">
+                                                1,190,000
+                                            </div>
+                                        </li>
+                                        <li class="props-list__item">
+                                            <div class="props-list__caption">
+                                                Sell price
+                                            </div>
+                                            <div class="props-list__value">
+                                                1,350,000
+                                            </div>
+                                        </li>
+                                        <li class="props-list__item selected">
+                                            <div class="props-list__caption">
+                                                ROI
+                                            </div>
+                                            <div class="props-list__value">
+                                                14.5 %
+                                            </div>
+                                        </li>
+                                        <li class="props-list__item-caption">
+                                            Rental opportunities
+                                        </li>
+                                        <li class="props-list__item">
+                                            <div class="props-list__caption">
+                                                Unfurnished
+                                            </div>
+                                            <div class="props-list__value">
+                                                85,000
+                                            </div>
+                                        </li>
+                                        <li class="props-list__item">
+                                            <div class="props-list__caption">
+                                                Furnished
+                                            </div>
+                                            <div class="props-list__value">
+                                                120,000
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div data-animate="bottom" class="cases__item-slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/02.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/01.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/03.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/02.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/01.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/03.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/02.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/01.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/03.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/02.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/01.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/03.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/02.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/01.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/03.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/02.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/01.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/03.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/02.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/01.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/03.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/02.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/01.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cases__item-prev swiper-button-prev"></div>
+                                    <div class="cases__item-next swiper-button-next"></div>
+                                    <div class="cases__item-pagination swiper-pagination"></div>
+                                    <div class="cases__item-bullets swiper-pagination"></div>
+                                </div>
+                            </li>
+                            <li class="cases__item">
+                                <div class="cases__item-header">
+                                    <div class="cases__item-info">
+                                        <h2 class="cases__item-caption" data-animate="bottom">
+                                            JLT Icon Tower
+                                        </h2>
+                                        <p class="cases__item-desc" data-animate="bottom">
+                                            This beautiful 1-bedroom apartment located in The Bay was initially priced at 720,000 AED. After being thoughtfully furnished, an additional 140,000 AED investment was made, resulting in a successful sale for 1,100,000 AED. This transaction yielded an impressive return on investment (ROI) of 27.9%.
+                                        </p>
+                                        <a href="#modal" data-fancybox class="cases__item-btn btn btn-primary btn-sm icon-plus" data-animate="bottom">Get a Quote</a>
+                                    </div>
+                                    <ul class="cases__item-props props-list" data-animate="bottom">
+                                        <li class="props-list__heading">Property information</li>
+                                        <li class="props-list__item">
+                                            <div class="props-list__caption">
+                                                Purchase price
+                                            </div>
+                                            <div class="props-list__value">
+                                                1,118,000
+                                            </div>
+                                        </li>
+                                        <li class="props-list__item">
+                                            <div class="props-list__caption">
+                                                Furnishing
+                                            </div>
+                                            <div class="props-list__value">
+                                                60,000
+                                            </div>
+                                        </li>
+                                        <li class="props-list__item">
+                                            <div class="props-list__caption">
+                                                Unfurnished sell price
+                                            </div>
+                                            <div class="props-list__value">
+                                                1,190,000
+                                            </div>
+                                        </li>
+                                        <li class="props-list__item">
+                                            <div class="props-list__caption">
+                                                Sell price
+                                            </div>
+                                            <div class="props-list__value">
+                                                1,350,000
+                                            </div>
+                                        </li>
+                                        <li class="props-list__item selected">
+                                            <div class="props-list__caption">
+                                                ROI
+                                            </div>
+                                            <div class="props-list__value">
+                                                14.5 %
+                                            </div>
+                                        </li>
+                                        <li class="props-list__item-caption">
+                                            Rental opportunities
+                                        </li>
+                                        <li class="props-list__item">
+                                            <div class="props-list__caption">
+                                                Unfurnished
+                                            </div>
+                                            <div class="props-list__value">
+                                                85,000
+                                            </div>
+                                        </li>
+                                        <li class="props-list__item">
+                                            <div class="props-list__caption">
+                                                Furnished
+                                            </div>
+                                            <div class="props-list__value">
+                                                120,000
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div data-animate="bottom" class="cases__item-slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/03.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/01.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/02.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/03.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/01.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/02.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/03.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/01.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/02.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/03.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/01.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/02.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/03.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/01.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/02.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/03.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/01.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/02.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/03.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/01.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/02.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/03.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-slide swiper-slide">
+                                            <div class="cases__item-image">
+                                                <img src="@img/cases/01.jpg" class="cover-image" alt="case">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cases__item-prev swiper-button-prev"></div>
+                                    <div class="cases__item-next swiper-button-next"></div>
+                                    <div class="cases__item-pagination swiper-pagination"></div>
+                                    <div class="cases__item-bullets swiper-pagination"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                @@include('html/_feedback.html', {})
+            </main>
+            @@include('html/_footer.html', {})
+        </div>
+        @@include('html/_modal.html', {})
+        @@include('html/_js.html', {})
+    </body>
+</html>

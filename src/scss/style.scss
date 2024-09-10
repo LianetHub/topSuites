@@ -1,0 +1,165 @@
+// Использование модулей SASS
+@use "sass:math";
+// Использование модулей SASS
+// ======================================МИКСИНЫ==============================================
+@import "mixins";
+// ======================================МИКСИНЫ==============================================
+
+// ======================================ШРИФТЫ===============================================
+
+// &display=swap&subset=cyrillic-ext
+@import "fonts";
+
+// ======================================ШРИФТЫ===============================================
+// ======================================ИКОНОЧНЫЙ ШРИФТ======================================
+@import "icons";
+
+// ======================================ИКОНОЧНЫЙ ШРИФТ======================================
+
+// Шрифт по умолчанию
+$fontfamily: "PlusJakartaSans";
+$font-cabinet: "CabinetGrotesk";
+
+// Шрифт по умолчанию
+
+$md0: 1659.98px;
+$md1: 1483.98px;
+$md2: 1263.98px;
+$md3: 1023.98px;
+$md4: 767.98px;
+$md5: 575.98px;
+$md6: 389.98px;
+
+// ПЕРЕМЕННЫЕ
+$minWidth: 320; // Минимальная ширина страницы
+$maxWidth: 1920; // Ширина макета
+$maxWidthContainer: rem(1420); // Максимальная ширина ограничивающего контейнера
+$containerPadding: 30;
+
+$text: #232c32;
+$beige: #eceae0;
+$white: #f7f6f2;
+$red: #9e3522;
+$green: #1f594d;
+$yellow: #ffeab4;
+$black: #232323;
+
+// Z-Index
+$ui-index-1: 1; // Для наполняющих элементов в общем потоке
+$ui-index-2: 2; // Для наполняющих элементов в общем потоке
+$ui-index-3: 3; // Для масок
+$ui-index-4: 4; // Для сайдбаров
+$ui-index-5: 5; // Для модалок
+$ui-index-6: 6; // Для элементов, перекрывающих все
+
+:root {
+	--lock-padding: 0px;
+}
+
+//ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ
+body {
+	font-family: $fontfamily, sans-serif;
+	color: #fff;
+	background: #0c1621;
+	min-width: 320px;
+	&.white-color {
+		background: #fff;
+		color: #232c32;
+		.header {
+			border-bottom: 1px solid #d9d9d9;
+		}
+		.icon-menu {
+			color: #232c32;
+		}
+		.breadcrumbs__link {
+			color: #232c32;
+			@media (any-hover: hover) {
+				&:hover {
+					color: #ffeab4;
+				}
+			}
+			&.active {
+				color: #232c32;
+			}
+		}
+		.header__contact::before {
+			background: $yellow;
+			color: $text;
+		}
+		.menu__link.active {
+			color: #232c32;
+		}
+	}
+	min-height: 100%;
+	line-height: normal;
+	&.lock,
+	&.lock-cart {
+		overflow: hidden;
+	}
+	&.lock-filter {
+		overflow: hidden;
+		@media (min-width: $md2) {
+			overflow: visible;
+		}
+	}
+}
+// ==================ОБОЛОЧКА==============================
+.wrapper {
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	padding-right: var(--lock-padding, 0);
+}
+
+//================== ОБОЛОЧКА==================================
+
+//=============== ОСНОВНАЯ СЕТКА===============================
+
+// Отзывчивая
+[class*="__container"] {
+	margin: 0 auto;
+	box-sizing: content-box;
+	max-width: 100%;
+	padding: 0 rem(16);
+	@media (min-width: $md4) {
+		padding: 0 rem(32);
+	}
+	@media (min-width: $md3) {
+		max-width: rem(960);
+	}
+	@media (min-width: $md2) {
+		max-width: rem(1200);
+	}
+	@media (min-width: $md1) {
+		max-width: $maxWidthContainer;
+	}
+}
+
+//=============== ОСНОВНАЯ СЕТКА===============================
+
+//=================Подключаем файлы стилей
+//================Общий файл для элементов страницы
+@import "ui";
+@import "forms";
+//================Общий файл для элементов страницы
+@import "header";
+@import "footer";
+//=======================================
+
+// =======================ОСНОВНОЙ БЛОК==================
+.page {
+	flex: 1 1 auto;
+	overflow: hidden;
+}
+// ========================================================
+
+@import "pages/home";
+@import "pages/gallery";
+@import "pages/blog";
+@import "pages/contacts";
+@import "pages/about";
+@import "pages/error";
+@import "pages/privacy";
