@@ -1627,6 +1627,7 @@ body.lock-filter {
   gap: 1em;
   text-align: right;
   font-size: 1rem;
+  white-space: nowrap;
   line-height: 2;
 }
 
@@ -1674,6 +1675,9 @@ body.lock-filter {
   -webkit-transition-delay: 550ms !important;
        -o-transition-delay: 550ms !important;
           transition-delay: 550ms !important;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .menu {
@@ -5731,13 +5735,24 @@ body.lock-filter {
     height: 1.5rem;
   }
 
+  .header__body {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+
+  .header__contacts {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+
   .header__contact,
   .menu__contact {
     font-size: 1rem;
   }
 
   .menu {
-    padding: 0 3.75rem;
+    padding: 0 3.125rem;
   }
 
   .menu__list {
@@ -6597,16 +6612,11 @@ body.lock-filter {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
     padding: 1.1rem 0 1.85rem;
   }
 
   .header__contacts {
     margin-left: auto;
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
   }
 
   .header__contact.icon-clock,
