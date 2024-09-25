@@ -87,13 +87,7 @@
 			align-items: center;
 			gap: 0.31rem;
 			transition: color 0.3s ease 0s;
-			&:not(.active) {
-				@media (any-hover: hover) {
-					&:hover {
-						color: $green;
-					}
-				}
-			}
+
 			&.active {
 				&::before {
 					visibility: visible;

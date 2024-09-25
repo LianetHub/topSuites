@@ -237,6 +237,7 @@ body {
 
 body.font-raleway {
   font-family: "Raleway", sans-serif;
+  font-variant-numeric: lining-nums;
 }
 
 body.white-color {
@@ -6775,10 +6776,6 @@ body.lock-filter {
 
   .breadcrumbs__link:hover {
     color: #f7f6f2;
-  }
-
-  .dropdown__list-item:not(.active):hover {
-    color: #1f594d;
   }
 
   .title-xl a:hover {

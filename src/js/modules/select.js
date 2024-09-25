@@ -17,11 +17,6 @@ export const select = () => {
         const dropdownBtn = dropdown.querySelector('.dropdown__button');
         const dropdownList = dropdown.querySelector('.dropdown__list');
         const dropdownItems = dropdownList.querySelectorAll('.dropdown__list-item');
-        const dropdownInput = dropdown.querySelector('.dropdown__input');
-
-        // Setting ARIA attributes
-        dropdown.setAttribute('role', 'listbox');
-        dropdownItems.forEach(item => item.setAttribute('role', 'option'));
 
         dropdownBtn.addEventListener('click', () => {
             const isOpen = dropdownBtn.getAttribute('aria-expanded') === 'true';
@@ -30,19 +25,47 @@ export const select = () => {
 
         dropdownItems.forEach(item => {
             item.addEventListener('click', e => {
-                dropdownItems.forEach(el => {
-                    el.classList.remove('active');
-                    el.removeAttribute('aria-checked');
-                });
-                item.classList.add('active');
-                item.setAttribute('aria-checked', 'true');
-                dropdownBtn.innerHTML = item.innerHTML;
-                dropdownInput.value = item.dataset.value;
+                e.preventDefault();
+
+                const selectedLanguage = item.querySelector('.dropdown__link').textContent;
+                setCookie("language", selectedLanguage);
+
+                dropdownBtn.textContent = selectedLanguage;
                 toggleDropdown(dropdown, false);
-                dropdownInput.dispatchEvent(new Event('change'));
+
+                setTimeout(() => {
+                    window.location.href = item.querySelector('.dropdown__link').href;
+                }, 100);
             });
         });
     };
+
+
+    function setCookie(name, value, options) {
+        options = options || {};
+        var expires = options.expires;
+
+        if (typeof expires == "number" && expires) {
+            var d = new Date();
+            d.setTime(d.getTime() + expires * 1000);
+            expires = options.expires = d;
+        }
+        if (expires && expires.toUTCString) {
+            options.expires = expires.toUTCString();
+        }
+        value = encodeURIComponent(value);
+        var updatedCookie = name + "=" + value;
+
+        for (var propName in options) {
+            updatedCookie += "; " + propName;
+            var propValue = options[propName];
+            if (propValue !== true) {
+                updatedCookie += "=" + propValue;
+            }
+        }
+
+        document.cookie = updatedCookie;
+    }
 
     const closeAllDropdownsOnClickOutside = e => {
         document.querySelectorAll('.dropdown.visible').forEach(dropdown => {
@@ -60,7 +83,6 @@ export const select = () => {
         }
     };
 
-    // Initialization
     document.querySelectorAll('.dropdown').forEach(setupDropdown);
     document.addEventListener('click', closeAllDropdownsOnClickOutside);
     document.addEventListener('keydown', closeAllDropdownsOnEscape);
