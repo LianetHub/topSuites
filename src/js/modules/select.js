@@ -23,14 +23,18 @@ export const select = () => {
             toggleDropdown(dropdown, !isOpen);
         });
 
+        console.log(dropdownItems);
         dropdownItems.forEach(item => {
+
+
             item.addEventListener('click', e => {
                 e.preventDefault();
 
-                const selectedLanguage = item.querySelector('.dropdown__link').textContent;
+                const selectedLanguage = item.querySelector('.dropdown__link').dataset.lang;
+
                 setCookie("language", selectedLanguage);
 
-                dropdownBtn.textContent = selectedLanguage;
+                dropdownBtn.textContent = item.querySelector('.dropdown__link').textContent;
                 toggleDropdown(dropdown, false);
 
                 setTimeout(() => {
