@@ -247,6 +247,7 @@
 	// .menu__link
 	&__link {
 		transition: color 0.3s ease 0s;
+		white-space: nowrap;
 		&.active,
 		&:active {
 			position: relative;
@@ -259,17 +260,17 @@
 				position: absolute;
 				left: 50%;
 				transform: translateX(-50%);
-				height: rem(4);
+				height: rem(5);
 				background: $yellow;
 				top: 100%;
 				width: 100%;
 				@media (min-width: $md3) {
 					width: calc(100% + rem(20));
-					top: rem(-26);
+					top: rem(-28);
 				}
 				@media (min-width: $md1) {
 					width: calc(100% + rem(40));
-					top: rem(-32);
+					top: rem(-34);
 				}
 			}
 		}

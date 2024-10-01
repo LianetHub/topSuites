@@ -23,7 +23,6 @@ export const select = () => {
             toggleDropdown(dropdown, !isOpen);
         });
 
-        console.log(dropdownItems);
         dropdownItems.forEach(item => {
 
 

@@ -240,6 +240,32 @@ body.font-raleway {
   font-variant-numeric: lining-nums;
 }
 
+body.font-raleway .title-xl {
+  line-height: 1;
+  font-weight: 400;
+}
+
+body.font-raleway .popup__title {
+  line-height: 1;
+}
+
+body.font-raleway .form__field-placeholder {
+  top: 1.25rem;
+}
+
+body.font-raleway .footer__contacts,
+body.font-raleway .menu__list,
+body.font-raleway .header__contacts {
+  font-weight: 500;
+}
+
+body.font-raleway .types__item-name,
+body.font-raleway .fast__item-num,
+body.font-raleway .who__num-value,
+body.font-raleway .main__title {
+  font-weight: 300;
+}
+
 body.white-color {
   background: #fff;
   color: #232c32;
@@ -1019,6 +1045,10 @@ body.lock-filter {
   }
 }
 
+.font-medium {
+  font-weight: 500;
+}
+
 ::-webkit-scrollbar {
   width: 0.5rem;
 }
@@ -1791,6 +1821,7 @@ body.lock-filter {
   -webkit-transition: color 0.3s ease 0s;
   -o-transition: color 0.3s ease 0s;
   transition: color 0.3s ease 0s;
+  white-space: nowrap;
   color: #768489;
 }
 
@@ -1808,7 +1839,7 @@ body.lock-filter {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-  height: 0.25rem;
+  height: 0.3125rem;
   background: #ffeab4;
   top: 100%;
   width: 100%;
@@ -5432,7 +5463,7 @@ body.lock-filter {
   .menu__link.active::before,
   .menu__link:active::before {
     width: calc(100% + 1.25rem);
-    top: -1.625rem;
+    top: -1.75rem;
   }
 
   .menu__link {
@@ -6605,6 +6636,10 @@ body.lock-filter {
 }
 
 @media (min-width: 1483.98px) {
+  body.font-raleway .main__title {
+    font-size: 6.7rem;
+  }
+
   [class*=__container] {
     max-width: 88.75rem;
   }
@@ -6634,7 +6669,7 @@ body.lock-filter {
   .menu__link.active::before,
   .menu__link:active::before {
     width: calc(100% + 2.5rem);
-    top: -2rem;
+    top: -2.125rem;
   }
 
   .footer__contacts {
@@ -6761,6 +6796,12 @@ body.lock-filter {
 
   .error__title {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 767.98px) and (min-width: 575.98px) {
+  body.font-raleway .main__title {
+    font-size: 3.5rem;
   }
 }
 

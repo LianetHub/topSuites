@@ -63,6 +63,37 @@ body {
 	&.font-raleway {
 		font-family: $font-raleway, sans-serif;
 		font-variant-numeric: lining-nums;
+		.title-xl {
+			line-height: 1;
+			font-weight: 400;
+		}
+		.popup__title {
+			line-height: 1;
+		}
+		.form__field-placeholder {
+			top: 1.25rem;
+		}
+		.footer__contacts,
+		.menu__list,
+		.header__contacts {
+			font-weight: 500;
+		}
+		.types__item-name,
+		.fast__item-num,
+		.who__num-value,
+		.main__title {
+			font-weight: 300;
+		}
+		.main__title {
+			@media (max-width: $md4) {
+				@media (min-width: $md5) {
+					font-size: 3.5rem;
+				}
+			}
+			@media (min-width: $md1) {
+				font-size: 6.7rem;
+			}
+		}
 	}
 	color: #fff;
 	background: #0c1621;

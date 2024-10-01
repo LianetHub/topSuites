@@ -27,18 +27,20 @@ export const animation = () => {
         const updateCounter = () => {
             const target = countFinish;
             const count = +counter.innerText;
-            const increment = target / 20;
-            if (count < target) {
-                counter.innerText = `${Math.ceil(count + increment)}`;
+            const increment = Math.ceil(target / 20);
+
+
+            if (count + increment < target) {
+                counter.innerText = `${count + increment}`;
                 setTimeout(updateCounter, 100);
-            } else counter.innerText = target;
+            } else {
+                counter.innerText = target;
+            }
         };
         updateCounter();
     }
 
 
-    // function numberWithCommas(x) {
-    //     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
-    // }
+
 
 }
