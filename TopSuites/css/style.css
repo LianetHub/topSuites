@@ -240,13 +240,12 @@ body.font-raleway {
   font-variant-numeric: lining-nums;
 }
 
-body.font-raleway .title-xl {
-  line-height: 1;
-  font-weight: 400;
-}
-
+body.font-raleway .title-xl,
+body.font-raleway .title-lg,
 body.font-raleway .popup__title {
-  line-height: 1;
+  line-height: 0.85;
+  padding-bottom: 0.15em;
+  font-weight: 400;
 }
 
 body.font-raleway .form__field-placeholder {

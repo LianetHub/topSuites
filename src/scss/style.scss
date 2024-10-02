@@ -60,15 +60,16 @@ $ui-index-6: 6; // Для элементов, перекрывающих все
 //ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ
 body {
 	font-family: $fontfamily, sans-serif;
+
 	&.font-raleway {
 		font-family: $font-raleway, sans-serif;
 		font-variant-numeric: lining-nums;
-		.title-xl {
-			line-height: 1;
-			font-weight: 400;
-		}
+		.title-xl,
+		.title-lg,
 		.popup__title {
-			line-height: 1;
+			line-height: 0.85;
+			padding-bottom: 0.15em;
+			font-weight: 400;
 		}
 		.form__field-placeholder {
 			top: 1.25rem;
