@@ -1,28 +1,24 @@
 .contacts {
-	padding: em(0) em(0) 1.5rem em(0);
+	padding: em(60) em(0) rem(30) em(0);
+	@media (min-width: $md4) {
+		padding: em(90) em(0) rem(30) em(0);
+	}
 	@media (min-width: $md2) {
-		padding: em(0) em(0) 8.13rem em(0);
+		padding: em(108) em(0) rem(30) em(0);
 	}
-	position: relative;
-	&::before {
-		content: "";
-		position: absolute;
-		top: 30%;
-		left: 0;
-		width: rem(385);
-		height: rem(486);
-		background-size: contain;
-		background-repeat: no-repeat;
-		pointer-events: none;
-		filter: blur(90px);
-		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='385' height='486' viewBox='0 0 385 486' fill='none'%3E%3Cpath d='M-174.456 35.0516C-182.641 31.9453 -191.18 28.4423 -199.932 26.8102C-149.176 134.78 -229.724 108.061 -237.649 101.718C-244.598 96.1557 -241.691 14.8768 -250.773 11.2424C-264.101 5.90868 -311.747 104.784 -325.922 101.718C-355.223 95.3795 -358.836 -7.75824 -388.021 0.466667C-405.051 5.26618 -436.384 17.6345 -443.105 35.5647C-446.568 44.8025 -446.719 54.8767 -444.644 64.5052C-440.592 83.2991 -440.423 104.839 -433.976 122.899C-425.171 147.565 -402.044 165.89 -383.302 182.833C-368.402 196.304 -354.225 212.598 -336.117 221.831C-312.028 234.113 -281.643 233.92 -255.286 235.788C-229.433 237.62 -200.523 237.095 -175.892 228.091C-158.442 221.712 -143.404 220.189 -124.5 220.189C-80.588 220.189 -32.9229 225.002 8.95233 238.867C39.1503 248.865 65.3019 266.042 92.3475 282.277C158.621 322.06 223.87 360.363 282.423 411.483C313.268 438.413 346.764 461.657 379.871 485.579C383.931 488.513 385 475.2 385 473.777C385 460.05 383.999 448.814 380.076 435.395C369.617 399.614 338.81 390.781 316.87 360.142C287.99 319.812 252.726 307.323 209.639 282.277C150.173 247.71 93.8166 234.31 32.5014 203.072C-11.3023 180.756 -100.279 172.204 -142.859 147.735C-170.676 131.75 -144.525 46.4099 -174.456 35.0516Z' fill='%23C6FF7E' fill-opacity='0.46'/%3E%3C/svg%3E");
-	}
+
 	// .contacts__container
 	&__container {
 	}
 	// .contacts__title
 	&__title {
+		.font-raleway & {
+			@media (min-width: $md3) {
+				font-size: rem(80);
+			}
+		}
 	}
+
 	// .contacts__body
 	&__body {
 		display: grid;
@@ -36,6 +32,74 @@
 			gap: 2.75rem;
 			margin: 3.5rem 0 0 0;
 			grid-template-columns: 1fr 1.175fr;
+		}
+		&.contacts__body-lg {
+			grid-template-columns: 1fr;
+			margin-top: rem(24);
+			.contacts__form {
+				@media (max-width: $md1) {
+					display: grid;
+					grid-template-columns: 1fr 1.175fr;
+				}
+				@media (max-width: $md4) {
+					grid-template-columns: 1fr;
+				}
+			}
+			@media (min-width: $md1) {
+				margin-top: rem(40);
+				grid-template-columns: 1fr rem(415);
+				gap: rem(23);
+			}
+			@media (max-width: $md4) {
+				gap: 0;
+			}
+			.contacts__feedback {
+				padding: rem(26) rem(31);
+				@media (max-width: $md1) {
+					margin-top: rem(10);
+					padding: rem(26) rem(24);
+				}
+				@media (max-width: $md4) {
+					margin-top: 0;
+					border: rem(1) solid rgba(255, 255, 255, 0.37);
+					border-top: 0;
+					padding: 1rem;
+				}
+				.form__checkbox {
+					margin-top: rem(24);
+					@media (max-width: $md2) {
+						.form__checkbox-content {
+							font-size: rem(12);
+						}
+					}
+				}
+			}
+			.contacts__main-block {
+				@media (max-width: $md5) {
+					&::before {
+						top: 1rem;
+					}
+					padding: 1rem 0.5rem 1rem 4.5rem;
+				}
+			}
+			.contacts__main-link {
+				@media (max-width: $md4) {
+					font-size: 1rem;
+				}
+			}
+			.contacts__main-subtitle {
+				@media (max-width: $md4) {
+					font-size: 0.875rem;
+				}
+			}
+		}
+	}
+	// .contacts__grid
+	&__grid {
+		display: grid;
+		@media (min-width: $md4) {
+			gap: rem(23);
+			grid-template-columns: repeat(3, 1fr);
 		}
 	}
 	// .contacts__main
@@ -71,6 +135,10 @@
 		}
 		@media (min-width: $md1) {
 			padding: 1.5rem 1.5rem 1.75rem rem(30);
+			.font-raleway & {
+				min-height: rem(217);
+				padding: 1.5rem 1.5rem rem(18) rem(24);
+			}
 		}
 		&.icon-telegram {
 			&::before {

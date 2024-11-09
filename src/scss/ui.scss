@@ -2,7 +2,10 @@
 @import 'modules/popup';
 @import 'modules/breadcrumbs';
 @import 'modules/select';
+// @import 'modules/range-slider';
+@import 'modules/range-input';
 @import 'modules/animation';
+@import 'modules/before-slider';
 
 //============ МОДУЛИ ====================
 
@@ -38,6 +41,7 @@
 	font-weight: 200;
 	line-height: 1.2;
 }
+
 .title-lg-desktop {
 	font-size: 1.5rem;
 	line-height: 1.4;
@@ -354,6 +358,79 @@
 
 .font-medium {
 	font-weight: 500;
+}
+
+.tabs {
+	overflow: visible;
+	.swiper-wrapper {
+		align-items: center;
+	}
+	// .tabs__item
+	&__item {
+		border-radius: rem(200);
+		border: rem(1) solid transparent;
+		color: rgba(255, 255, 255, 0.6);
+		line-height: 160%;
+		font-size: rem(14);
+		& span {
+			display: none;
+		}
+		@media (min-width: $md4) {
+			font-size: rem(16);
+			& span {
+				display: inline;
+			}
+		}
+		@media (min-width: $md2) {
+			font-size: rem(18);
+		}
+		padding: rem(10);
+		width: auto;
+		&.active {
+			padding: rem(8) rem(22.5);
+			@media (min-width: $md4) {
+				padding: rem(15) rem(22);
+			}
+			@media (min-width: $md2) {
+				padding: rem(12) rem(37.5);
+			}
+			color: #fff;
+			border: rem(1) solid #ffeab4;
+		}
+		transition: color 0.3s ease;
+		@media (any-hover: hover) {
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+}
+
+.tab-content {
+	display: none;
+	&.active {
+		display: block;
+		animation: fadeIn 0.5s;
+	}
+	@keyframes fadeIn {
+		0% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	@keyframes fadeOut {
+		0% {
+			opacity: 1;
+		}
+
+		100% {
+			opacity: 0;
+		}
+	}
 }
 
 //============ ОБЩИЕ ЭЛЕМЕНТЫ ============

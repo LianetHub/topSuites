@@ -1,0 +1,213 @@
+$rangeColor: rgba(255, 255, 255, 0.3);
+
+$rangeHeight: 0.5rem;
+$rangeBorderRadius: 0.5rem;
+
+$thumbColor: #0c1621;
+$thumbSize: 1.75rem;
+$thumbBorderColor: #ffeab4;
+$thumbBorderSize: rem(8);
+
+$progress: #ffeab4;
+
+@mixin range($size, $color, $border: false, $radius: false) {
+	height: $size;
+	background: $rangeColor;
+	@if ($border) {
+		border: $thumbBorderSize solid $thumbBorderColor;
+	}
+	@if ($radius) {
+		border-radius: $rangeBorderRadius;
+	}
+}
+
+.range {
+	position: relative;
+	z-index: 2;
+	&::after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0;
+		z-index: 2;
+		border-radius: 50%;
+		cursor: pointer;
+		pointer-events: none;
+		box-shadow: 0 0 0 rem(3) #0c1621;
+		width: rem(20);
+		height: rem(20);
+		border: rem(4) solid $thumbBorderColor;
+		@media (min-width: $md5) {
+			width: rem(24);
+			height: rem(24);
+			border: rem(6) solid $thumbBorderColor;
+		}
+		@media (min-width: $md2) {
+			box-shadow: 0 0 0 rem(3) #0c1621;
+			width: rem(28);
+			height: rem(28);
+			border: $thumbBorderSize solid $thumbBorderColor;
+		}
+		background: $thumbColor;
+	}
+	//.range__input
+	&__input {
+		position: relative;
+		-webkit-appearance: none;
+		background-color: transparent;
+		padding: 0;
+		display: block;
+		width: 100%;
+		opacity: 1;
+		height: $rangeHeight;
+		&::-webkit-slider-thumb {
+			position: relative;
+			z-index: 1;
+			border-radius: 50%;
+			cursor: pointer;
+			box-shadow: 0 0 0 rem(3) #0c1621;
+			width: rem(20);
+			height: rem(20);
+			margin-top: #{-1 * math.div(0.75rem, 2)};
+			border: rem(4) solid $thumbBorderColor;
+			@media (min-width: $md5) {
+				width: rem(24);
+				height: rem(24);
+				margin-top: #{-1 * math.div(1rem, 2)};
+				border: rem(6) solid $thumbBorderColor;
+			}
+			@media (min-width: $md2) {
+				box-shadow: 0 0 0 rem(3) #0c1621;
+				width: $thumbSize;
+				height: $thumbSize;
+				margin-top: #{-1 * math.div(($thumbSize - $rangeHeight), 2)};
+				border: $thumbBorderSize solid $thumbBorderColor;
+			}
+			background: $thumbColor;
+			-webkit-appearance: none;
+		}
+		&::-moz-range-thumb {
+			position: relative;
+			z-index: 1;
+			border-radius: 50%;
+			cursor: pointer;
+			box-shadow: 0 0 0 rem(3) #0c1621;
+			width: rem(20);
+			height: rem(20);
+			border: rem(4) solid $thumbBorderColor;
+			@media (min-width: $md5) {
+				width: rem(24);
+				height: rem(24);
+				border: rem(6) solid $thumbBorderColor;
+			}
+			@media (min-width: $md2) {
+				box-shadow: 0 0 0 rem(3) #0c1621;
+				width: $thumbSize;
+				height: $thumbSize;
+				border: $thumbBorderSize solid $thumbBorderColor;
+			}
+			background: $thumbColor;
+			box-sizing: border-box;
+			display: inline-block;
+		}
+		&::-ms-thumb {
+			position: relative;
+			z-index: 1;
+			border-radius: 50%;
+			cursor: pointer;
+			box-shadow: 0 0 0 rem(3) #0c1621;
+			width: rem(20);
+			height: rem(20);
+			border: rem(4) solid $thumbBorderColor;
+			@media (min-width: $md5) {
+				width: rem(24);
+				height: rem(24);
+				border: rem(6) solid $thumbBorderColor;
+			}
+			@media (min-width: $md2) {
+				box-shadow: 0 0 0 rem(3) #0c1621;
+				border: $thumbBorderSize solid $thumbBorderColor;
+				width: $thumbSize;
+				height: $thumbSize;
+			}
+			background: $thumbColor;
+			display: inline-block;
+			border: 0;
+			margin-top: rem(5);
+		}
+		&::-webkit-slider-runnable-track {
+			border-color: transparent;
+			color: transparent;
+			@include range($rangeHeight, $rangeColor, false, true);
+			border-radius: $rangeBorderRadius;
+		}
+		&::-moz-range-track {
+			@include range($rangeHeight, $rangeColor, false, true);
+			border-radius: $rangeBorderRadius;
+		}
+		&::-ms-track {
+			border-color: transparent;
+			color: transparent;
+			@include range($rangeHeight, $rangeColor, false, true);
+			border-radius: rem(5.7);
+			@media (min-width: $md5) {
+				border-radius: rem(6);
+			}
+			@media (min-width: $md2) {
+				border-radius: $rangeBorderRadius;
+			}
+		}
+		&::-ms-fill-lower {
+			background: $progress;
+			border-radius: rem(5.7);
+			@media (min-width: $md5) {
+				border-radius: rem(6);
+			}
+			@media (min-width: $md2) {
+				border-radius: $rangeBorderRadius;
+			}
+		}
+		&::-moz-range-progress {
+			background: $progress;
+			border: 0;
+			border-radius: rem(5.7);
+			height: rem(5.7);
+			@media (min-width: $md5) {
+				border-radius: rem(6);
+				height: rem(6);
+			}
+			@media (min-width: $md2) {
+				height: $rangeHeight;
+				border-radius: $rangeBorderRadius;
+			}
+		}
+		&::-ms-tooltip {
+			display: none;
+		}
+		&:disabled {
+			cursor: default;
+			pointer-events: none;
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 0;
+			width: var(--precent, 100%);
+			height: calc(rem(5.7) + 1px);
+			border-radius: rem(5.7) 0 0 rem(5.7);
+			@media (min-width: $md5) {
+				height: calc(rem(6) + 1px);
+				border-radius: rem(6) 0 0 rem(6);
+			}
+			@media (min-width: $md2) {
+				height: calc($rangeHeight + 1px);
+				border-radius: $rangeBorderRadius 0 0 $rangeBorderRadius;
+			}
+			background: $progress;
+			z-index: 1;
+		}
+	}
+}

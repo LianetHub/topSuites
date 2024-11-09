@@ -1,5 +1,5 @@
 %ic {
-	font-family: "icons";
+	font-family: 'icons';
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
@@ -10,50 +10,59 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-[class^="icon-"],
-[class*=" icon-"] {
+[class^='icon-'],
+[class*=' icon-'] {
 	&:before {
 		@extend %ic;
 		display: block;
 	}
 }
 
-.icon-facebook:before {
-	content: "\e90b";
-}
-.icon-twitter:before {
-	content: "\e90c";
-}
-.icon-telegram:before {
-	content: "\e90a";
-}
-.icon-mail:before {
-	content: "\e909";
+.icon-add:before {
+	content: '\e900';
 }
 .icon-arrow-bold:before {
-	content: "\e908";
-}
-.icon-add:before {
-	content: "\e906";
-}
-.icon-remove:before {
-	content: "\e907";
+	content: '\e901';
 }
 .icon-check:before {
-	content: "\e900";
+	content: '\e902';
 }
 .icon-clock:before {
-	content: "\e901";
+	content: '\e903';
+}
+.icon-facebook:before {
+	content: '\e904';
+}
+.icon-instagram:before {
+	content: '\e905';
 }
 .icon-left:before {
-	content: "\e902";
+	content: '\e906';
+}
+.icon-location:before {
+	content: '\e907';
+}
+.icon-mail:before {
+	content: '\e908';
 }
 .icon-phone:before {
-	content: "\e903";
+	content: '\e909';
 }
 .icon-plus:before {
-	content: "\e904";
+	content: '\e90a';
+}
+.icon-remove:before {
+	content: '\e90b';
 }
 .icon-right:before {
-	content: "\e905";
+	content: '\e90c';
+}
+.icon-telegram:before {
+	content: '\e90d';
+}
+.icon-twitter:before {
+	content: '\e90e';
+}
+.icon-youtube:before {
+	content: '\e90f';
 }

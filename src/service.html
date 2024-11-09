@@ -1,0 +1,1638 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', { 'title': 'TopSuites | Home' })
+    <body class="font-raleway">
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            "active": 1,
+            "shelude": true,
+            "className": " header-main"
+            })
+            <main class="page">
+                <section class="service-page">
+                    <div class="service-page__container">
+                        <nav aria-label="breadcrumbs menu" class="breadcrumbs" data-animate="bottom">
+                            <ul class="breadcrumbs__items">
+                                <li class="breadcrumbs__item">
+                                    <a href="/" class="breadcrumbs__link">Главная</a>
+                                </li>
+                                <li class="breadcrumbs__item">
+                                    <span class="breadcrumbs__link active">Ремонт квартир в Дубае под ключ</span>
+                                </li>
+                            </ul>
+                        </nav>
+                        <h1 class="service-page__title title-xl" data-animate="bottom">
+                            Ремонт квартир
+                            в&nbsp;Дубае под ключ
+                        </h1>
+                        <ul class="service-page__list">
+                            <li class="service-page__item icon-check" data-animate="bottom">
+                                Выполняем работы качественно и в срок
+                            </li>
+                            <li class="service-page__item icon-check" data-animate="bottom">
+                                Используем проверенные материалы
+                            </li>
+                            <li class="service-page__item icon-check" data-animate="bottom">
+                                Учитываем все <br class="pc-only"> нюансы
+                            </li>
+                        </ul>
+                        <div class="service-page__btns" data-animate="bottom">
+                            <a href="" class="service-page__btn btn btn-primary icon-plus">Заказать услугу</a>
+                            <a href="" class="service-page__btn btn btn-primary-outline">Рассчитать стоимость</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="calc">
+                    <div class="calc__container">
+                        <h2 class="calc__title title-xl" data-animate="bottom">
+                            Калькулятор
+                        </h2>
+                        <div class="calc__body" data-animate="bottom">
+                            <div class="calc__block calc__block-lg">
+                                <div class="calc__block-caption">
+                                    Площадь, м<sup>2</sup>
+                                </div>
+                                <div class="calc__block-row">
+                                    <div class="range-slider">
+                                        <input type="number" name="square" class="range-slider__input form__input form__input-grey" value="45">
+                                        <div class="range-slider__body">
+                                            <div class="range-slider__block range">
+                                                <input type="range" name="range" min="0" max="100" step="1" class="range__input">
+                                            </div>
+                                            <div class="range-slider__bottom">
+                                                <div class="range-slider__start">0 м<sup>2</sup></div>
+                                                <div class="range-slider__end">100+ м<sup>2</sup></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calc__block">
+                                <div class="calc__block-caption">
+                                    Комнат
+                                </div>
+                                <div class="calc__block-row">
+                                    <div class="calc__block-labels">
+                                        <label class="radio-btn">
+                                            <input type="radio" name="rooms" value="1" checked class="radio-btn__input hidden" hidden>
+                                            <span class="radio-btn__field">1</span>
+                                        </label>
+                                        <label class="radio-btn">
+                                            <input type="radio" name="rooms" value="2" class="radio-btn__input hidden" hidden>
+                                            <span class="radio-btn__field">2</span>
+                                        </label>
+                                        <label class="radio-btn">
+                                            <input type="radio" name="rooms" value="3" class="radio-btn__input hidden" hidden>
+                                            <span class="radio-btn__field">3</span>
+                                        </label>
+                                        <label class="radio-btn">
+                                            <input type="radio" name="rooms" value="4" class="radio-btn__input hidden" hidden>
+                                            <span class="radio-btn__field">4+</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calc__block">
+                                <div class="calc__block-caption">
+                                    Ванных комнат
+                                </div>
+                                <div class="calc__block-row">
+                                    <div class="calc__block-labels">
+                                        <label class="radio-btn">
+                                            <input type="radio" name="bathrooms" value="1" checked class="radio-btn__input hidden" hidden>
+                                            <span class="radio-btn__field">1</span>
+                                        </label>
+                                        <label class="radio-btn">
+                                            <input type="radio" name="bathrooms" value="2" class="radio-btn__input hidden" hidden>
+                                            <span class="radio-btn__field">2</span>
+                                        </label>
+                                        <label class="radio-btn">
+                                            <input type="radio" name="bathrooms" value="3" class="radio-btn__input hidden" hidden>
+                                            <span class="radio-btn__field">3+</span>
+                                        </label>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calc__block">
+                                <div class="calc__block-caption">
+                                    Есть проект?
+                                </div>
+                                <div class="calc__block-row">
+                                    <div class="calc__block-labels">
+                                        <label class="radio-btn">
+                                            <input type="radio" name="project" value="1" checked class="radio-btn__input hidden" hidden>
+                                            <span class="radio-btn__field">Да</span>
+                                        </label>
+                                        <label class="radio-btn">
+                                            <input type="radio" name="project" value="2" class="radio-btn__input hidden" hidden>
+                                            <span class="radio-btn__field">Нет</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calc__block">
+                                <div class="calc__block-caption">
+                                    Замена кухни
+                                </div>
+                                <div class="calc__block-row">
+                                    <div class="calc__block-labels">
+                                        <label class="radio-btn">
+                                            <input type="radio" name="exchange-kitchen" value="1" checked class="radio-btn__input hidden" hidden>
+                                            <span class="radio-btn__field">Да</span>
+                                        </label>
+                                        <label class="radio-btn">
+                                            <input type="radio" name="exchange-kitchen" value="2" class="radio-btn__input hidden" hidden>
+                                            <span class="radio-btn__field">Нет</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calc__block">
+                                <div class="calc__block-caption">
+                                    Замена шкафов
+                                </div>
+                                <div class="calc__block-row">
+                                    <div class="calc__block-labels">
+                                        <label class="radio-btn">
+                                            <input type="radio" name="exchange-cabinets" value="1" checked class="radio-btn__input hidden" hidden>
+                                            <span class="radio-btn__field">Да</span>
+                                        </label>
+                                        <label class="radio-btn">
+                                            <input type="radio" name="exchange-cabinets" value="2" class="radio-btn__input hidden" hidden>
+                                            <span class="radio-btn__field">Нет</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calc__block">
+                                <div class="calc__block-caption">
+                                    Мебелировка
+                                </div>
+                                <div class="calc__block-row">
+                                    <div class="calc__block-labels">
+                                        <label class="radio-btn">
+                                            <input type="radio" name="furniture" value="1" checked class="radio-btn__input hidden" hidden>
+                                            <span class="radio-btn__field">Да</span>
+                                        </label>
+                                        <label class="radio-btn">
+                                            <input type="radio" name="furniture" value="2" class="radio-btn__input hidden" hidden>
+                                            <span class="radio-btn__field">Нет</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calc__total">
+                                <div class="calc__total-column">
+                                    <div class="calc__total-title">Итого:</div>
+                                    <div class="calc__total-value">
+                                        2 300 032 AED
+                                    </div>
+                                </div>
+                                <form action="#" class="calc__total-form">
+                                    <div class="form__row">
+                                        <label class="form__field">
+                                            <input type="tel" name="phone" data-required class="form__input" placeholder="">
+                                            <span class="form__field-placeholder">Ваш телефон</span>
+                                        </label>
+                                        <span class="form__error">Введите корректный номер телефона</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-sm">Вызвать замерщика</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="examples">
+                    <div class="examples__container">
+                        <div class="examples__title title-xl" data-animate="bottom">Примеры работ</div>
+                        <div class="examples__slider" data-animate="bottom">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="examples__slide swiper-slide">
+                                        <div class="before-slider">
+                                            <div class="before-slider__image before-slider__before" style="background-image: url('@img/before.jpg')"></div>
+                                            <div class="before-slider__image before-slider__after" style="background-image: url('@img/after.jpg')"></div>
+                                            <input type="range" min="0" max="100" value="50" class="before-slider__input" name="slider" />
+                                            <div class="before-slider__button"></div>
+                                            <div class="before-slider__label before">до</div>
+                                            <div class="before-slider__label after">после</div>
+                                        </div>
+                                    </div>
+                                    <div class="examples__slide swiper-slide">
+                                        <div class="before-slider">
+                                            <div class="before-slider__image before-slider__before" style="background-image: url('@img/before.jpg')"></div>
+                                            <div class="before-slider__image before-slider__after" style="background-image: url('@img/after.jpg')"></div>
+                                            <input type="range" min="0" max="100" value="50" class="before-slider__input" name="slider" />
+                                            <div class="before-slider__button"></div>
+                                            <div class="before-slider__label before">до</div>
+                                            <div class="before-slider__label after">после</div>
+                                        </div>
+                                    </div>
+                                    <div class="examples__slide swiper-slide">
+                                        <div class="before-slider">
+                                            <div class="before-slider__image before-slider__before" style="background-image: url('@img/before.jpg')"></div>
+                                            <div class="before-slider__image before-slider__after" style="background-image: url('@img/after.jpg')"></div>
+                                            <input type="range" min="0" max="100" value="50" class="before-slider__input" name="slider" />
+                                            <div class="before-slider__button"></div>
+                                            <div class="before-slider__label before">до</div>
+                                            <div class="before-slider__label after">после</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="examples__controls" data-animate="bottom">
+                                <div class="examples__prev swiper-button-prev"></div>
+                                <div class="examples__next swiper-button-next"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="deadlines">
+                    <div class="deadlines__container">
+                        <h2 class="deadlines__title title-xl" data-animate="bottom">
+                            Сроки выполнения
+                        </h2>
+                        <ul class="deadlines__list" data-animate="bottom">
+                            <li class="deadlines__item">
+                                <div class="deadlines__item-caption">1-к<span>омнатная</span> квартира</div>
+                                <div class="deadlines__item-value">30 рабочих дней</div>
+                                <div class="deadlines__item-desc">с момента получения разрешения</div>
+                            </li>
+                            <li class="deadlines__item">
+                                <div class="deadlines__item-caption">2-к<span>омнатная</span> квартира</div>
+                                <div class="deadlines__item-value">35 рабочих дней</div>
+                                <div class="deadlines__item-desc">с момента получения разрешения</div>
+                            </li>
+                            <li class="deadlines__item">
+                                <div class="deadlines__item-caption">3-к<span>омнатная</span> квартира</div>
+                                <div class="deadlines__item-value">40 рабочих дней</div>
+                                <div class="deadlines__item-desc">с момента получения разрешения</div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="progress">
+                    <div class="progress__container">
+                        <h2 class="progress__title title-xl" data-animate="bottom">
+                            Процесс ремонта
+                        </h2>
+                        <div class="progress__blocks">
+                            <div class="progress__block">
+                                <h3 class="progress__caption" data-animate="bottom">Подготовительный этап</h3>
+                                <ul class="progress__list" data-animate="bottom">
+                                    <li class="progress__item">
+                                        <div class="progress__item-icon">
+                                            <img src="@img/progress/01.svg" alt="иконка">
+                                        </div>
+                                        <div class="progress__item-title">
+                                            Обмер помещений
+                                        </div>
+                                        <a href="" class="progress__item-btn">Вызвать замерщика</a>
+                                    </li>
+                                    <li class="progress__item">
+                                        <div class="progress__item-icon">
+                                            <img src="@img/progress/02.svg" alt="иконка">
+                                        </div>
+                                        <div class="progress__item-title">
+                                            Составление проекта под&nbsp;дубайские нормы
+                                        </div>
+                                    </li>
+                                    <li class="progress__item">
+                                        <div class="progress__item-icon">
+                                            <img src="@img/progress/03.svg" alt="иконка">
+                                        </div>
+                                        <div class="progress__item-title">
+                                            Составление сметы
+                                        </div>
+                                    </li>
+                                    <li class="progress__item">
+                                        <div class="progress__item-icon">
+                                            <img src="@img/progress/04.svg" alt="иконка">
+                                        </div>
+                                        <div class="progress__item-title">
+                                            Получение разрешения
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="progress__block">
+                                <h3 class="progress__caption">Подготовка помещений</h3>
+                                <ul class="progress__list" data-animate="bottom">
+                                    <li class="progress__item">
+                                        <div class="progress__item-icon">
+                                            <img src="@img/progress/05.svg" alt="иконка">
+                                        </div>
+                                        <div class="progress__item-title">
+                                            Закрытие всех нужных помещений и поверхностей защитными материалами
+                                        </div>
+                                    </li>
+                                    <li class="progress__item">
+                                        <div class="progress__item-icon">
+                                            <img src="@img/progress/06.svg" alt="иконка">
+                                        </div>
+                                        <div class="progress__item-title">
+                                            Демонтажные работы
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="progress__block">
+                                <h3 class="progress__caption">Строительные и монтажные работы</h3>
+                                <ul class="progress__list" data-animate="bottom">
+                                    <li class="progress__item">
+                                        <div class="progress__item-icon">
+                                            <img src="@img/progress/07.svg" alt="иконка">
+                                        </div>
+                                        <div class="progress__item-title">
+                                            Возведение всех дополнительных конструкций (если требуется)
+                                        </div>
+                                    </li>
+                                    <li class="progress__item">
+                                        <div class="progress__item-icon">
+                                            <img src="@img/progress/08.svg" alt="иконка">
+                                        </div>
+                                        <div class="progress__item-title">
+                                            Работы по электрике, пересбор электрического щита
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="progress__block">
+                                <h3 class="progress__caption">Отделочные работы</h3>
+                                <ul class="progress__list" data-animate="bottom">
+                                    <li class="progress__item">
+                                        <div class="progress__item-icon">
+                                            <img src="@img/progress/09.svg" alt="иконка">
+                                        </div>
+                                        <div class="progress__item-title">
+                                            Подготовка стен под малярные работы
+                                        </div>
+                                    </li>
+                                    <li class="progress__item">
+                                        <div class="progress__item-icon">
+                                            <img src="@img/progress/10.svg" alt="иконка">
+                                        </div>
+                                        <div class="progress__item-title">
+                                            Малярные работы
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="progress__block">
+                                <h3 class="progress__caption">Монтажные работы</h3>
+                                <ul class="progress__list" data-animate="bottom">
+                                    <li class="progress__item">
+                                        <div class="progress__item-icon">
+                                            <img src="@img/progress/11.svg" alt="иконка">
+                                        </div>
+                                        <div class="progress__item-title">
+                                            Установка мебели
+                                        </div>
+                                    </li>
+                                    <li class="progress__item">
+                                        <div class="progress__item-icon">
+                                            <img src="@img/progress/12.svg" alt="иконка">
+                                        </div>
+                                        <div class="progress__item-title">
+                                            Установка сантехники
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="progress__block">
+                                <h3 class="progress__caption">Завершающий этап</h3>
+                                <ul class="progress__list" data-animate="bottom">
+                                    <li class="progress__item">
+                                        <div class="progress__item-icon">
+                                            <img src="@img/progress/13.svg" alt="иконка">
+                                        </div>
+                                        <div class="progress__item-title">
+                                            Уборка
+                                        </div>
+                                    </li>
+                                    <li class="progress__item">
+                                        <div class="progress__item-icon">
+                                            <img src="@img/progress/14.png" alt="иконка">
+                                        </div>
+                                        <div class="progress__item-title">
+                                            Сдача объекта
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="types-repairs">
+                    <div class="types-repairs__container">
+                        <h2 class="types-repairs__title title-xl" data-animate="bottom">Виды ремонта</h2>
+                        <div class="tabs-wrapper">
+                            <div class="types-repairs__tabs tabs swiper" data-animate="bottom">
+                                <div class="swiper-wrapper">
+                                    <button class="tabs__item swiper-slide active">Косметический <span>РЕМОНТ</span></button>
+                                    <button class="tabs__item swiper-slide">Дизайнерский <span>РЕМОНТ</span></button>
+                                </div>
+                            </div>
+                            <div class="types-repairs__tab-contents">
+                                <div class="tab-content active">
+                                    <div class="types-repairs__body">
+                                        <div class="types-repairs__main">
+                                            <ul class="types-repairs__list" data-animate="bottom">
+                                                <li>Подготовка стен к покраске</li>
+                                                <li>Установка напольного покрытия</li>
+                                                <li>Замена плинтусов</li>
+                                                <li>Установка гипсокартонного потолка</li>
+                                                <li>Реставрация кухоных фасадов</li>
+                                                <li>Обслуживание всех технических узлов (Бойлеры, Кондиционеры, Дренажи)</li>
+                                                <li>Штроба каналов под электровыводы</li>
+                                                <li>Установка Дополнительных розеток</li>
+                                            </ul>
+                                            <div class="types-repairs__bottom" data-animate="bottom">
+                                                <div class="types-repairs__bottom-block">
+                                                    <div class="types-repairs__bottom-caption">Примерная стоимость</div>
+                                                    <div class="types-repairs__bottom-value">
+                                                        от 50 AED м<sup>2</sup>
+                                                    </div>
+                                                </div>
+                                                <div class="types-repairs__bottom-block">
+                                                    <div class="types-repairs__bottom-caption">
+                                                        Примерные сроки
+                                                    </div>
+                                                    <div class="types-repairs__bottom-value">
+                                                        от 30 дней
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="types-repairs__slider swiper" data-animate="fade">
+                                            <div class="swiper-wrapper">
+                                                <a href="@img/gallery/22.jpg" data-fancybox="types-gallery" class="types-repairs__slide swiper-slide">
+                                                    <img src="@img/gallery/22.jpg" class="cover-image" alt="Фото проекта">
+                                                </a>
+                                                <a href="@img/gallery/01.jpg" data-fancybox="types-gallery" class="types-repairs__slide swiper-slide">
+                                                    <img src="@img/gallery/01.jpg" class="cover-image" alt="Фото проекта">
+                                                </a>
+                                                <a href="@img/gallery/02.jpg" data-fancybox="types-gallery" class="types-repairs__slide swiper-slide">
+                                                    <img src="@img/gallery/02.jpg" class="cover-image" alt="Фото проекта">
+                                                </a>
+                                                <a href="@img/gallery/03.jpg" data-fancybox="types-gallery" class="types-repairs__slide swiper-slide">
+                                                    <img src="@img/gallery/03.jpg" class="cover-image" alt="Фото проекта">
+                                                </a>
+                                            </div>
+                                            <div class="types-repairs__pagination swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-content">
+                                    <div class="types-repairs__body">
+                                        <div class="types-repairs__main">
+                                            <ul class="types-repairs__list">
+                                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, iste.</li>
+                                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, iste.</li>
+                                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, iste.</li>
+                                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, iste.</li>
+                                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, iste.</li>
+                                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, iste.</li>
+                                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, iste.</li>
+                                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, iste.</li>
+                                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, iste.</li>
+                                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, iste.</li>
+                                            </ul>
+                                            <div class="types-repairs__bottom">
+                                                <div class="types-repairs__bottom-block">
+                                                    <div class="types-repairs__bottom-caption">Примерная стоимость</div>
+                                                    <div class="types-repairs__bottom-value">
+                                                        от 50 AED м<sup>2</sup>
+                                                    </div>
+                                                </div>
+                                                <div class="types-repairs__bottom-block">
+                                                    <div class="types-repairs__bottom-caption">
+                                                        Примерные сроки
+                                                    </div>
+                                                    <div class="types-repairs__bottom-value">
+                                                        от 30 дней
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="types-repairs__slider swiper">
+                                            <div class="swiper-wrapper">
+                                                <a href="@img/gallery/22.jpg" data-fancybox="types-gallery-2" class="types-repairs__slide swiper-slide">
+                                                    <img src="@img/gallery/22.jpg" class="cover-image" alt="Фото проекта">
+                                                </a>
+                                                <a href="@img/gallery/01.jpg" data-fancybox="types-gallery-2" class="types-repairs__slide swiper-slide">
+                                                    <img src="@img/gallery/01.jpg" class="cover-image" alt="Фото проекта">
+                                                </a>
+                                                <a href="@img/gallery/02.jpg" data-fancybox="types-gallery-2" class="types-repairs__slide swiper-slide">
+                                                    <img src="@img/gallery/02.jpg" class="cover-image" alt="Фото проекта">
+                                                </a>
+                                                <a href="@img/gallery/03.jpg" data-fancybox="types-gallery-2" class="types-repairs__slide swiper-slide">
+                                                    <img src="@img/gallery/03.jpg" class="cover-image" alt="Фото проекта">
+                                                </a>
+                                            </div>
+                                            <div class="types-repairs__pagination swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="types-repairs__footer" data-animate="bottom">
+                            <div class="types-repairs__footer-column">
+                                <div class="types-repairs__footer-title">
+                                    Оставить заявку
+                                </div>
+                                <div class="types-repairs__footer-desc">
+                                    Наш консультант свяжется с вами и&nbsp;ответит на все ваши вопросы
+                                </div>
+                            </div>
+                            <form action="#" class="types-repairs__form">
+                                <div class="form__row">
+                                    <label class="form__field">
+                                        <input type="text" name="name" data-required class="form__input" placeholder="">
+                                        <span class="form__field-placeholder">Имя</span>
+                                    </label>
+                                    <span class="form__error">Введите корректное имя</span>
+                                </div>
+                                <div class="form__row">
+                                    <label class="form__field">
+                                        <input type="tel" name="phone" data-required class="form__input" placeholder="">
+                                        <span class="form__field-placeholder">Телефон</span>
+                                    </label>
+                                    <span class="form__error">Введите корректный номер телефона</span>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-sm">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                <section class="team">
+                    <div class="team__container">
+                        <h2 class="team__title title-xl" data-animate="bottom">
+                            Команда
+                        </h2>
+                        <ul class="team__list">
+                            <li class="team__item" data-animate="bottom">
+                                <div class="team__item-main">
+                                    <div class="team__item-person">
+                                        <div class="team__item-name">
+                                            Виктор <br class="pc-only"> Салихов
+                                        </div>
+                                        <div class="team__item-position">
+                                            Principal Architect
+                                        </div>
+                                    </div>
+                                    <div class="team__item-desc">
+                                        Главный архитектор является основой фирмы, демонстрируя опыт, лидерство и креативность в мире архитектуры. Обладая многолетним опытом
+                                        и глубоким пониманием динамики развития отрасли, этот сотрудник формирует видение проектов фирмы, контролирует их выполнение
+                                        и поддерживает высочайшие стандарты дизайна.
+                                    </div>
+                                </div>
+                                <div class="team__item-thumb">
+                                    <img src="@img/team/01.jpg" class="cover-image" alt="avatar">
+                                    <a href="" class="team__item-btn btn btn-primary">Написать</a>
+                                </div>
+                            </li>
+                            <li class="team__item" data-animate="bottom">
+                                <div class="team__item-main">
+                                    <div class="team__item-person">
+                                        <div class="team__item-name">
+                                            Сергей
+                                            <br class="pc-only"> Черенков
+                                        </div>
+                                        <div class="team__item-position">
+                                            Design Architect
+                                        </div>
+                                    </div>
+                                    <div class="team__item-desc">
+                                        Архитектор-дизайнер, воплощающий в себе безграничное воображение
+                                        и художественное чутье, является творческой душой архитектурного бюро. Обладая природным талантом воплощать идеи в материальные структуры, этот сотрудник отличается неукротимой страстью к инновациям и созданию новых проектов.
+                                    </div>
+                                </div>
+                                <div class="team__item-thumb">
+                                    <img src="@img/team/04.jpg" class="cover-image" alt="avatar">
+                                    <a href="" class="team__item-btn btn btn-primary">Написать</a>
+                                </div>
+                            </li>
+                            <li class="team__item" data-animate="bottom">
+                                <div class="team__item-main">
+                                    <div class="team__item-person">
+                                        <div class="team__item-name">
+                                            Петр <br class="pc-only">
+                                            Хитров
+                                        </div>
+                                        <div class="team__item-position">
+                                            Project Manager
+                                        </div>
+                                    </div>
+                                    <div class="team__item-desc">
+                                        Главный архитектор является основой фирмы, демонстрируя опыт, лидерство и креативность в мире архитектуры. Обладая многолетним опытом
+                                        и глубоким пониманием динамики развития отрасли, этот сотрудник формирует видение проектов фирмы, контролирует их выполнение
+                                        и поддерживает высочайшие стандарты дизайна.
+                                    </div>
+                                </div>
+                                <div class="team__item-thumb">
+                                    <img src="@img/team/03.jpg" class="cover-image" alt="avatar">
+                                    <a href="" class="team__item-btn btn btn-primary">Написать</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="reviews">
+                    <div class="reviews__container">
+                        <h2 class="reviews__title title-xl" data-animate="bottom">
+                            Отзывы
+                        </h2>
+                        <div class="tabs-wrapper">
+                            <div class="reviews__tabs tabs swiper" data-animate="bottom">
+                                <div class="swiper-wrapper">
+                                    <button class="tabs__item swiper-slide active">текст</button>
+                                    <button class="tabs__item swiper-slide">видео</button>
+                                    <button class="tabs__item swiper-slide">аудио</button>
+                                </div>
+                            </div>
+                            <div class="reviews__tabs-content">
+                                <div class="tab-content active">
+                                    <div class="reviews__body">
+                                        <div class="reviews__column">
+                                            <div class="reviews__item" data-animate="bottom">
+                                                <div class="reviews__item-rate">
+                                                    <div class="reviews__item-star">
+                                                        <img src="@img/icons/star-fill.svg" alt="star">
+                                                    </div>
+                                                    <div class="reviews__item-star">
+                                                        <img src="@img/icons/star-fill.svg" alt="star">
+                                                    </div>
+                                                    <div class="reviews__item-star">
+                                                        <img src="@img/icons/star-fill.svg" alt="star">
+                                                    </div>
+                                                    <div class="reviews__item-star">
+                                                        <img src="@img/icons/star-fill.svg" alt="star">
+                                                    </div>
+                                                    <div class="reviews__item-star">
+                                                        <img src="@img/icons/star.svg" alt="star">
+                                                    </div>
+                                                </div>
+                                                <blockquote class="reviews__item-quote">
+                                                    TopSuites превзошли все мои ожидания. Ремонт был выполнен точно в срок и с высочайшим качеством. Дизайнеры учли все мои пожелания, и теперь мои апартаменты выглядят современно и стильно."
+                                                </blockquote>
+                                                <div class="reviews__item-author">
+                                                    <div class="reviews__item-thumb">
+                                                        <img src="@img/team/01.jpg" alt="thumb">
+                                                    </div>
+                                                    <div class="reviews__item-name">Кирилл, Port de La Mer</div>
+                                                </div>
+                                            </div>
+                                            <div class="reviews__item" data-animate="bottom">
+                                                <div class="reviews__item-rate">
+                                                    <div class="reviews__item-star">
+                                                        <img src="@img/icons/star-fill.svg" alt="star">
+                                                    </div>
+                                                    <div class="reviews__item-star">
+                                                        <img src="@img/icons/star-fill.svg" alt="star">
+                                                    </div>
+                                                    <div class="reviews__item-star">
+                                                        <img src="@img/icons/star-fill.svg" alt="star">
+                                                    </div>
+                                                    <div class="reviews__item-star">
+                                                        <img src="@img/icons/star-fill.svg" alt="star">
+                                                    </div>
+                                                    <div class="reviews__item-star">
+                                                        <img src="@img/icons/star.svg" alt="star">
+                                                    </div>
+                                                </div>
+                                                <blockquote class="reviews__item-quote">
+                                                    Очень доволен работой TopSuites. Профессиональная команда, которая знает свое дело. Все этапы ремонта проходили гладко, и результат получился превосходным. Рекомендую всем, кто хочет качественный ремонт
+                                                </blockquote>
+                                                <div class="reviews__item-author">
+                                                    <div class="reviews__item-thumb">
+                                                        <img src="@img/team/01.jpg" alt="thumb">
+                                                    </div>
+                                                    <div class="reviews__item-name">Кирилл, Port de La Mer</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="reviews__column">
+                                            <div class="reviews__item lg-offset" data-animate="bottom">
+                                                <div class="reviews__item-rate">
+                                                    <div class="reviews__item-star">
+                                                        <img src="@img/icons/star-fill.svg" alt="star">
+                                                    </div>
+                                                    <div class="reviews__item-star">
+                                                        <img src="@img/icons/star-fill.svg" alt="star">
+                                                    </div>
+                                                    <div class="reviews__item-star">
+                                                        <img src="@img/icons/star-fill.svg" alt="star">
+                                                    </div>
+                                                    <div class="reviews__item-star">
+                                                        <img src="@img/icons/star-fill.svg" alt="star">
+                                                    </div>
+                                                    <div class="reviews__item-star">
+                                                        <img src="@img/icons/star.svg" alt="star">
+                                                    </div>
+                                                </div>
+                                                <blockquote class="reviews__item-quote">
+                                                    Сотрудничество с TopSuites было замечательным. Каждый член команды проявил себя ответственно и вежливо. Мне особенно понравилось, что меня постоянно информировали о ходе работ и вовремя вносили нужные коррективы. Итоговый интерьер даже лучше, чем я представлял
+                                                </blockquote>
+                                                <div class="reviews__item-author">
+                                                    <div class="reviews__item-thumb">
+                                                        <img src="@img/team/01.jpg" alt="thumb">
+                                                    </div>
+                                                    <div class="reviews__item-name">Кирилл, Port de La Mer</div>
+                                                </div>
+                                            </div>
+                                            <div class="reviews__item" data-animate="bottom">
+                                                <div class="reviews__item-rate">
+                                                    <div class="reviews__item-star">
+                                                        <img src="@img/icons/star-fill.svg" alt="star">
+                                                    </div>
+                                                    <div class="reviews__item-star">
+                                                        <img src="@img/icons/star-fill.svg" alt="star">
+                                                    </div>
+                                                    <div class="reviews__item-star">
+                                                        <img src="@img/icons/star-fill.svg" alt="star">
+                                                    </div>
+                                                    <div class="reviews__item-star">
+                                                        <img src="@img/icons/star-fill.svg" alt="star">
+                                                    </div>
+                                                    <div class="reviews__item-star">
+                                                        <img src="@img/icons/star.svg" alt="star">
+                                                    </div>
+                                                </div>
+                                                <blockquote class="reviews__item-quote">
+                                                    TopSuites - это компания, которой можно доверять. Ремонт был выполнен с большим вниманием к деталям. Интерьер получился именно таким, каким я его представлял. Огромное спасибо за превосходную работу!
+                                                </blockquote>
+                                                <div class="reviews__item-author">
+                                                    <div class="reviews__item-thumb">
+                                                        <img src="@img/team/01.jpg" alt="thumb">
+                                                    </div>
+                                                    <div class="reviews__item-name">Кирилл, Port de La Mer</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-content">
+
+                                </div>
+                                <div class="tab-content">
+
+                                </div>
+                            </div>
+                            <a href="" class="reviews__more btn btn-primary-outline" data-animate="bottom">Показать еще</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="where">
+                    <div class="where__container">
+                        <h2 class="where__title title-xl" data-animate="bottom">
+                            Где мы работали
+                        </h2>
+                        <div class="tabs-wrapper">
+                            <div class="where__tabs tabs swiper" data-animate="bottom">
+                                <div class="swiper-wrapper">
+                                    <button class="tabs__item swiper-slide active">Все локации</button>
+                                    <button class="tabs__item swiper-slide">Creek Harbour</button>
+                                    <button class="tabs__item swiper-slide">Hills Estate</button>
+                                    <button class="tabs__item swiper-slide">Jumeirah Village Circle</button>
+                                    <button class="tabs__item swiper-slide">Mohammed bin Rashid City</button>
+                                </div>
+                            </div>
+                            <div class="where__tabs-contents">
+                                <div class="where__tabs-content tab-content active">
+                                    <ul class="where__list">
+                                        <li class="where__item" data-animate="bottom">
+                                            <div class="where__item-image">
+                                                <img src="@img/where/01.jpg" class="cover-image" alt="img">
+                                            </div>
+                                            <div class="where__item-body">
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Локация</div>
+                                                    <div class="where__item-text">Abu Dhabi Al Mamsha</div>
+                                                </div>
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Жилой комплекс</div>
+                                                    <div class="where__item-text">Mamsha Al Saadiyat</div>
+                                                </div>
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Застройщик</div>
+                                                    <div class="where__item-text">Provis</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="where__item" data-animate="bottom">
+                                            <div class="where__item-image">
+                                                <img src="@img/where/02.jpg" class="cover-image" alt="img">
+                                            </div>
+                                            <div class="where__item-body">
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Локация</div>
+                                                    <div class="where__item-text">Abu Dhabi Al Mamsha</div>
+                                                </div>
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Жилой комплекс</div>
+                                                    <div class="where__item-text">Mamsha Al Saadiyat</div>
+                                                </div>
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Застройщик</div>
+                                                    <div class="where__item-text">Provis</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="where__item" data-animate="bottom">
+                                            <div class="where__item-image">
+                                                <img src="@img/where/03.jpg" class="cover-image" alt="img">
+                                            </div>
+                                            <div class="where__item-body">
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Локация</div>
+                                                    <div class="where__item-text">Abu Dhabi Al Mamsha</div>
+                                                </div>
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Жилой комплекс</div>
+                                                    <div class="where__item-text">Mamsha Al Saadiyat</div>
+                                                </div>
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Застройщик</div>
+                                                    <div class="where__item-text">Provis</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="where__item" data-animate="bottom">
+                                            <div class="where__item-image">
+                                                <img src="@img/where/04.jpg" class="cover-image" alt="img">
+                                            </div>
+                                            <div class="where__item-body">
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Локация</div>
+                                                    <div class="where__item-text">Abu Dhabi Al Mamsha</div>
+                                                </div>
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Жилой комплекс</div>
+                                                    <div class="where__item-text">Mamsha Al Saadiyat</div>
+                                                </div>
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Застройщик</div>
+                                                    <div class="where__item-text">Provis</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="where__tabs-content tab-content">
+                                    <ul class="where__list">
+                                        <li class="where__item" data-animate="bottom">
+                                            <div class="where__item-image">
+                                                <img src="@img/where/02.jpg" class="cover-image" alt="img">
+                                            </div>
+                                            <div class="where__item-body">
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Локация</div>
+                                                    <div class="where__item-text">Abu Dhabi Al Mamsha</div>
+                                                </div>
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Жилой комплекс</div>
+                                                    <div class="where__item-text">Mamsha Al Saadiyat</div>
+                                                </div>
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Застройщик</div>
+                                                    <div class="where__item-text">Provis</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="where__item" data-animate="bottom">
+                                            <div class="where__item-image">
+                                                <img src="@img/where/03.jpg" class="cover-image" alt="img">
+                                            </div>
+                                            <div class="where__item-body">
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Локация</div>
+                                                    <div class="where__item-text">Abu Dhabi Al Mamsha</div>
+                                                </div>
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Жилой комплекс</div>
+                                                    <div class="where__item-text">Mamsha Al Saadiyat</div>
+                                                </div>
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Застройщик</div>
+                                                    <div class="where__item-text">Provis</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="where__item" data-animate="bottom">
+                                            <div class="where__item-image">
+                                                <img src="@img/where/04.jpg" class="cover-image" alt="img">
+                                            </div>
+                                            <div class="where__item-body">
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Локация</div>
+                                                    <div class="where__item-text">Abu Dhabi Al Mamsha</div>
+                                                </div>
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Жилой комплекс</div>
+                                                    <div class="where__item-text">Mamsha Al Saadiyat</div>
+                                                </div>
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Застройщик</div>
+                                                    <div class="where__item-text">Provis</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="where__item" data-animate="bottom">
+                                            <div class="where__item-image">
+                                                <img src="@img/where/01.jpg" class="cover-image" alt="img">
+                                            </div>
+                                            <div class="where__item-body">
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Локация</div>
+                                                    <div class="where__item-text">Abu Dhabi Al Mamsha</div>
+                                                </div>
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Жилой комплекс</div>
+                                                    <div class="where__item-text">Mamsha Al Saadiyat</div>
+                                                </div>
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Застройщик</div>
+                                                    <div class="where__item-text">Provis</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="where__tabs-content tab-content">
+                                    <ul class="where__list">
+                                        <li class="where__item" data-animate="bottom">
+                                            <div class="where__item-image">
+                                                <img src="@img/where/03.jpg" class="cover-image" alt="img">
+                                            </div>
+                                            <div class="where__item-body">
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Локация</div>
+                                                    <div class="where__item-text">Abu Dhabi Al Mamsha</div>
+                                                </div>
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Жилой комплекс</div>
+                                                    <div class="where__item-text">Mamsha Al Saadiyat</div>
+                                                </div>
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Застройщик</div>
+                                                    <div class="where__item-text">Provis</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="where__item" data-animate="bottom">
+                                            <div class="where__item-image">
+                                                <img src="@img/where/04.jpg" class="cover-image" alt="img">
+                                            </div>
+                                            <div class="where__item-body">
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Локация</div>
+                                                    <div class="where__item-text">Abu Dhabi Al Mamsha</div>
+                                                </div>
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Жилой комплекс</div>
+                                                    <div class="where__item-text">Mamsha Al Saadiyat</div>
+                                                </div>
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Застройщик</div>
+                                                    <div class="where__item-text">Provis</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="where__item" data-animate="bottom">
+                                            <div class="where__item-image">
+                                                <img src="@img/where/01.jpg" class="cover-image" alt="img">
+                                            </div>
+                                            <div class="where__item-body">
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Локация</div>
+                                                    <div class="where__item-text">Abu Dhabi Al Mamsha</div>
+                                                </div>
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Жилой комплекс</div>
+                                                    <div class="where__item-text">Mamsha Al Saadiyat</div>
+                                                </div>
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Застройщик</div>
+                                                    <div class="where__item-text">Provis</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="where__item" data-animate="bottom">
+                                            <div class="where__item-image">
+                                                <img src="@img/where/02.jpg" class="cover-image" alt="img">
+                                            </div>
+                                            <div class="where__item-body">
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Локация</div>
+                                                    <div class="where__item-text">Abu Dhabi Al Mamsha</div>
+                                                </div>
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Жилой комплекс</div>
+                                                    <div class="where__item-text">Mamsha Al Saadiyat</div>
+                                                </div>
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Застройщик</div>
+                                                    <div class="where__item-text">Provis</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="where__tabs-content tab-content">
+                                    <ul class="where__list">
+                                        <li class="where__item" data-animate="bottom">
+                                            <div class="where__item-image">
+                                                <img src="@img/where/04.jpg" class="cover-image" alt="img">
+                                            </div>
+                                            <div class="where__item-body">
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Локация</div>
+                                                    <div class="where__item-text">Abu Dhabi Al Mamsha</div>
+                                                </div>
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Жилой комплекс</div>
+                                                    <div class="where__item-text">Mamsha Al Saadiyat</div>
+                                                </div>
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Застройщик</div>
+                                                    <div class="where__item-text">Provis</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="where__item" data-animate="bottom">
+                                            <div class="where__item-image">
+                                                <img src="@img/where/01.jpg" class="cover-image" alt="img">
+                                            </div>
+                                            <div class="where__item-body">
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Локация</div>
+                                                    <div class="where__item-text">Abu Dhabi Al Mamsha</div>
+                                                </div>
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Жилой комплекс</div>
+                                                    <div class="where__item-text">Mamsha Al Saadiyat</div>
+                                                </div>
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Застройщик</div>
+                                                    <div class="where__item-text">Provis</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="where__item" data-animate="bottom">
+                                            <div class="where__item-image">
+                                                <img src="@img/where/02.jpg" class="cover-image" alt="img">
+                                            </div>
+                                            <div class="where__item-body">
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Локация</div>
+                                                    <div class="where__item-text">Abu Dhabi Al Mamsha</div>
+                                                </div>
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Жилой комплекс</div>
+                                                    <div class="where__item-text">Mamsha Al Saadiyat</div>
+                                                </div>
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Застройщик</div>
+                                                    <div class="where__item-text">Provis</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="where__item" data-animate="bottom">
+                                            <div class="where__item-image">
+                                                <img src="@img/where/03.jpg" class="cover-image" alt="img">
+                                            </div>
+                                            <div class="where__item-body">
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Локация</div>
+                                                    <div class="where__item-text">Abu Dhabi Al Mamsha</div>
+                                                </div>
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Жилой комплекс</div>
+                                                    <div class="where__item-text">Mamsha Al Saadiyat</div>
+                                                </div>
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Застройщик</div>
+                                                    <div class="where__item-text">Provis</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="where__tabs-content tab-content">
+                                    <ul class="where__list">
+                                        <li class="where__item" data-animate="bottom">
+                                            <div class="where__item-image">
+                                                <img src="@img/where/01.jpg" class="cover-image" alt="img">
+                                            </div>
+                                            <div class="where__item-body">
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Локация</div>
+                                                    <div class="where__item-text">Abu Dhabi Al Mamsha</div>
+                                                </div>
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Жилой комплекс</div>
+                                                    <div class="where__item-text">Mamsha Al Saadiyat</div>
+                                                </div>
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Застройщик</div>
+                                                    <div class="where__item-text">Provis</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="where__item" data-animate="bottom">
+                                            <div class="where__item-image">
+                                                <img src="@img/where/02.jpg" class="cover-image" alt="img">
+                                            </div>
+                                            <div class="where__item-body">
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Локация</div>
+                                                    <div class="where__item-text">Abu Dhabi Al Mamsha</div>
+                                                </div>
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Жилой комплекс</div>
+                                                    <div class="where__item-text">Mamsha Al Saadiyat</div>
+                                                </div>
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Застройщик</div>
+                                                    <div class="where__item-text">Provis</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="where__item" data-animate="bottom">
+                                            <div class="where__item-image">
+                                                <img src="@img/where/03.jpg" class="cover-image" alt="img">
+                                            </div>
+                                            <div class="where__item-body">
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Локация</div>
+                                                    <div class="where__item-text">Abu Dhabi Al Mamsha</div>
+                                                </div>
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Жилой комплекс</div>
+                                                    <div class="where__item-text">Mamsha Al Saadiyat</div>
+                                                </div>
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Застройщик</div>
+                                                    <div class="where__item-text">Provis</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="where__item" data-animate="bottom">
+                                            <div class="where__item-image">
+                                                <img src="@img/where/04.jpg" class="cover-image" alt="img">
+                                            </div>
+                                            <div class="where__item-body">
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Локация</div>
+                                                    <div class="where__item-text">Abu Dhabi Al Mamsha</div>
+                                                </div>
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Жилой комплекс</div>
+                                                    <div class="where__item-text">Mamsha Al Saadiyat</div>
+                                                </div>
+                                                <div class="where__item-column">
+                                                    <div class="where__item-caption">Застройщик</div>
+                                                    <div class="where__item-text">Provis</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="" class="where__more btn btn-primary-outline" data-animate="bottom">Показать еще</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="why-us">
+                    <div class="why-us__container">
+                        <h2 class="why-us__title title-xl" data-animate="bottom">
+                            Почему выбирают&nbsp;нас
+                        </h2>
+                        <ul class="why-us__grid">
+                            <li class="why-us__item" data-animate="bottom">
+                                <div class="why-us__item-icon">
+                                    <img src="@img/why/comments.svg" alt="icon">
+                                </div>
+                                <div class="why-us__item-desc">
+                                    Еженедельные отчеты
+                                    в&nbsp;мессенджерах
+                                    с&nbsp;фотографиями
+                                </div>
+                            </li>
+                            <li class="why-us__item" data-animate="bottom">
+                                <div class="why-us__item-icon">
+                                    <img src="@img/why/voice-recognition.svg" alt="icon">
+                                </div>
+                                <div class="why-us__item-desc">
+                                    Прораб всегда <br>
+                                    на связи и говорит
+                                    на&nbsp;вашем языке
+                                </div>
+                            </li>
+                            <li class="why-us__item" data-animate="bottom">
+                                <div class="why-us__item-icon">
+                                    <img src="@img/why/layer.svg" alt="icon">
+                                </div>
+                                <div class="why-us__item-desc">
+                                    Поэтапная оплата проекта
+                                </div>
+                            </li>
+                            <li class="why-us__item" data-animate="bottom">
+                                <div class="why-us__item-icon">
+                                    <img src="@img/why/handshake.svg" alt="icon">
+                                </div>
+                                <div class="why-us__item-desc">
+                                    Рабочие с опытом взаимодействия
+                                    с&nbsp;персоналом здания
+                                </div>
+                            </li>
+                            <li class="why-us__item" data-animate="bottom">
+                                <div class="why-us__item-icon">
+                                    <img src="@img/why/briefcase.svg" alt="icon">
+                                </div>
+                                <div class="why-us__item-desc">
+                                    Опыт и понимание нюансов инфраструктуры в&nbsp;странах GCC
+                                </div>
+                            </li>
+                            <li class="why-us__item" data-animate="bottom">
+                                <div class="why-us__item-icon">
+                                    <img src="@img/why/brick-wall.svg" alt="icon">
+                                </div>
+                                <div class="why-us__item-desc">
+                                    Мы сами подбираем поставщиков материалов исходя из&nbsp;запроса
+                                </div>
+                            </li>
+                            <li class="why-us__item" data-animate="bottom">
+                                <div class="why-us__item-icon">
+                                    <img src="@img/why/wallet.svg" alt="icon">
+                                </div>
+                                <div class="why-us__item-desc">
+                                    Прозрачная смета
+                                    с&nbsp;подробной разбивкой всех&nbsp;затрат
+                                </div>
+                            </li>
+                            <li class="why-us__item" data-animate="bottom">
+                                <div class="why-us__item-icon">
+                                    <img src="@img/why/half-empty-star.svg" alt="icon">
+                                </div>
+                                <div class="why-us__item-desc">
+                                    Индивидуальный подход, учитывающий ваши пожелания и&nbsp;бюджет
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="blog">
+                    <div class="blog__container">
+                        <div class="blog__header">
+                            <h1 class="blog__title title-xl">Блог</h1>
+                            <div class="blog__controls">
+                                <button type="button" class="blog__prev"></button>
+                                <button type="button" class="blog__next"></button>
+                            </div>
+                        </div>
+                        <div class="blog__slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="blog__item swiper-slide">
+                                    <a href="" class="blog__item-image">
+                                        <img src="@img/blog/01.jpg" class="cover-image" alt="blog">
+                                    </a>
+                                    <div class="blog__item-desc">
+                                        <time datetime="2023-7-11" class="blog__item-time">November 7,2023</time>
+                                        <a href="" class="blog__item-caption">The Impact of Color in&nbsp;Interior Design</a>
+                                        <p class="blog__item-text">
+                                            Color has a huge impact on interior design. He is able to create a certain mood, emphasize the style
+                                            and&nbsp;character of the room, as well as influence ...
+                                        </p>
+                                        <a href="" class="blog__item-btn btn btn-sm btn-primary-outline icon-plus">Read more</a>
+                                    </div>
+                                </div>
+                                <div class="blog__item swiper-slide">
+                                    <a href="" class="blog__item-image">
+                                        <img src="@img/blog/02.jpg" class="cover-image" alt="blog">
+                                    </a>
+                                    <div class="blog__item-desc">
+                                        <time datetime="2023-5-11" class="blog__item-time">November 5,2023</time>
+                                        <a href="" class="blog__item-caption">Maximizing Space: Small Apartment Design Ideas</a>
+                                        <p class="blog__item-text">
+                                            Built-in Furniture: Use built-in furniture to make
+                                            the most of the available space. For example, instead of a separate wardrobe, you can install built-in ...
+                                        </p>
+                                        <a href="" class="blog__item-btn btn btn-sm btn-primary-outline icon-plus">Read more</a>
+                                    </div>
+                                </div>
+                                <div class="blog__item swiper-slide">
+                                    <a href="" class="blog__item-image">
+                                        <img src="@img/blog/03.jpg" class="cover-image" alt="blog">
+                                    </a>
+                                    <div class="blog__item-desc">
+                                        <time datetime="2023-18-11" class="blog__item-time">November 18,2023</time>
+                                        <a href="" class="blog__item-caption">Creating a Serene Bedroom Retreat</a>
+                                        <p class="blog__item-text">
+                                            Creating a serene privacy in the bedroom
+                                            is&nbsp;an&nbsp;important aspect of interior design that can help you relax, unwind and recharge your batteries
+                                        </p>
+                                        <a href="" class="blog__item-btn btn btn-sm btn-primary-outline icon-plus">Read more</a>
+                                    </div>
+                                </div>
+                                <div class="blog__item swiper-slide">
+                                    <a href="" class="blog__item-image">
+                                        <img src="@img/blog/04.jpg" class="cover-image" alt="blog">
+                                    </a>
+                                    <div class="blog__item-desc">
+                                        <time datetime="2023-20-11" class="blog__item-time">November 20,2023</time>
+                                        <a href="" class="blog__item-caption">Eco-Friendly Design: Incorporating Sustainability into Interior Spaces</a>
+                                        <p class="blog__item-text">
+                                            Eco–friendly interior design is an approach to creating and organizing an interior that takes into account environmental problems and priorities
+                                        </p>
+                                        <a href="" class="blog__item-btn btn btn-sm btn-primary-outline icon-plus">Read more</a>
+                                    </div>
+                                </div>
+                                <div class="blog__item swiper-slide">
+                                    <a href="" class="blog__item-image">
+                                        <img src="@img/blog/05.jpg" class="cover-image" alt="blog">
+                                    </a>
+                                    <div class="blog__item-desc">
+                                        <time datetime="2023-24-11" class="blog__item-time">November 24,2023</time>
+                                        <a href="" class="blog__item-caption">The Power of Lighting in Interior Design</a>
+                                        <p class="blog__item-text">
+                                            Color has a huge impact on interior design. He is able to create a certain mood, emphasize the style
+                                            and&nbsp;character of the room, as well as influence
+                                        </p>
+                                        <a href="" class="blog__item-btn btn btn-sm btn-primary-outline icon-plus">Read more</a>
+                                    </div>
+                                </div>
+                                <div class="blog__item swiper-slide">
+                                    <a href="" class="blog__item-image">
+                                        <img src="@img/blog/06.jpg" class="cover-image" alt="blog">
+                                    </a>
+                                    <div class="blog__item-desc">
+                                        <time datetime="2023-20-11" class="blog__item-time">November 20,2023</time>
+                                        <a href="" class="blog__item-caption">Eco-Friendly Design: Incorporating Sustainability into Interior Spaces</a>
+                                        <p class="blog__item-text">
+                                            Eco–friendly interior design is an approach to creating and organizing an interior that takes into account environmental problems and priorities
+                                        </p>
+                                        <a href="" class="blog__item-btn btn btn-sm btn-primary-outline icon-plus">Read more</a>
+                                    </div>
+                                </div>
+                                <div class="blog__item swiper-slide">
+                                    <a href="" class="blog__item-image">
+                                        <img src="@img/blog/03.jpg" class="cover-image" alt="blog">
+                                    </a>
+                                    <div class="blog__item-desc">
+                                        <time datetime="2023-18-11" class="blog__item-time">November 18,2023</time>
+                                        <a href="" class="blog__item-caption">Creating a Serene Bedroom Retreat</a>
+                                        <p class="blog__item-text">
+                                            Creating a serene privacy in the bedroom
+                                            is&nbsp;an&nbsp;important aspect of interior design that can help you relax, unwind and recharge your batteries
+                                        </p>
+                                        <a href="" class="blog__item-btn btn btn-sm btn-primary-outline icon-plus">Read more</a>
+                                    </div>
+                                </div>
+                                <div class="blog__item swiper-slide">
+                                    <a href="" class="blog__item-image">
+                                        <img src="@img/blog/01.jpg" class="cover-image" alt="blog">
+                                    </a>
+                                    <div class="blog__item-desc">
+                                        <time datetime="2023-7-11" class="blog__item-time">November 7,2023</time>
+                                        <a href="" class="blog__item-caption">The Impact of Color in&nbsp;Interior Design</a>
+                                        <p class="blog__item-text">
+                                            Color has a huge impact on interior design. He is able to create a certain mood, emphasize the style
+                                            and&nbsp;character of the room, as well as influence ...
+                                        </p>
+                                        <a href="" class="blog__item-btn btn btn-sm btn-primary-outline icon-plus">Read more</a>
+                                    </div>
+                                </div>
+                                <div class="blog__item swiper-slide">
+                                    <a href="" class="blog__item-image">
+                                        <img src="@img/blog/02.jpg" class="cover-image" alt="blog">
+                                    </a>
+                                    <div class="blog__item-desc">
+                                        <time datetime="2023-5-11" class="blog__item-time">November 5,2023</time>
+                                        <a href="" class="blog__item-caption">Maximizing Space: Small Apartment Design Ideas</a>
+                                        <p class="blog__item-text">
+                                            Built-in Furniture: Use built-in furniture to make
+                                            the most of the available space. For example, instead of a separate wardrobe, you can install built-in ...
+                                        </p>
+                                        <a href="" class="blog__item-btn btn btn-sm btn-primary-outline icon-plus">Read more</a>
+                                    </div>
+                                </div>
+                                <div class="blog__item swiper-slide">
+                                    <a href="" class="blog__item-image">
+                                        <img src="@img/blog/05.jpg" class="cover-image" alt="blog">
+                                    </a>
+                                    <div class="blog__item-desc">
+                                        <time datetime="2023-24-11" class="blog__item-time">November 24,2023</time>
+                                        <a href="" class="blog__item-caption">The Power of Lighting in Interior Design</a>
+                                        <p class="blog__item-text">
+                                            Color has a huge impact on interior design. He is able to create a certain mood, emphasize the style
+                                            and&nbsp;character of the room, as well as influence
+                                        </p>
+                                        <a href="" class="blog__item-btn btn btn-sm btn-primary-outline icon-plus">Read more</a>
+                                    </div>
+                                </div>
+                                <div class="blog__item swiper-slide">
+                                    <a href="" class="blog__item-image">
+                                        <img src="@img/blog/06.jpg" class="cover-image" alt="blog">
+                                    </a>
+                                    <div class="blog__item-desc">
+                                        <time datetime="2023-20-11" class="blog__item-time">November 20,2023</time>
+                                        <a href="" class="blog__item-caption">Eco-Friendly Design: Incorporating Sustainability into Interior Spaces</a>
+                                        <p class="blog__item-text">
+                                            Eco–friendly interior design is an approach to creating and organizing an interior that takes into account environmental problems and priorities
+                                        </p>
+                                        <a href="" class="blog__item-btn btn btn-sm btn-primary-outline icon-plus">Read more</a>
+                                    </div>
+                                </div>
+                                <div class="blog__item swiper-slide">
+                                    <a href="" class="blog__item-image">
+                                        <img src="@img/blog/04.jpg" class="cover-image" alt="blog">
+                                    </a>
+                                    <div class="blog__item-desc">
+                                        <time datetime="2023-20-11" class="blog__item-time">November 20,2023</time>
+                                        <a href="" class="blog__item-caption">Eco-Friendly Design: Incorporating Sustainability into Interior Spaces</a>
+                                        <p class="blog__item-text">
+                                            Eco–friendly interior design is an approach to creating and organizing an interior that takes into account environmental problems and priorities
+                                        </p>
+                                        <a href="" class="blog__item-btn btn btn-sm btn-primary-outline icon-plus">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="faq" id="faq">
+                    <div class="faq__container">
+                        <h2 class="faq__title title-xl" data-animate="bottom">
+                            Ответы на&nbsp;вопросы
+                        </h2>
+                        <ul class="faq__list" data-spollers>
+                            <li class="faq__item" data-animate="bottom">
+                                <button type="button" class="faq__item-button _active" data-spoller>Какая гарантия на ремонт?</button>
+                                <p class="faq__item-answer">
+                                    Мы предоставляем гарантию на все выполненные ремонтные работы. Гарантийный срок составляет 1 год с момента завершения работ. Если в течение этого срока возникнут какие-либо проблемы или дефекты, связанные с нашей работой, мы устраним их бесплатно. Наша цель - обеспечить полную удовлетворенность клиента и долгосрочное качество наших услуг.
+                                </p>
+                            </li>
+                            <li class="faq__item" data-animate="bottom">
+                                <button type="button" class="faq__item-button" data-spoller>От чего зависит стоимость ремонта?</button>
+                                <p class="faq__item-answer">
+                                    Стоимость определяется исключительно требованиями заказчика и уровнем сложности исполнения. Предпочтения могут быть разными: одни клиенты предпочитают использовать в интерьере такие роскошные элементы, как мрамор и золото, другие - более минималистичный подход к дизайну.
+                                </p>
+                            </li>
+                            <li class="faq__item" data-animate="bottom">
+                                <button type="button" class="faq__item-button" data-spoller>Сколько стоит выезд замерщика?</button>
+                                <p class="faq__item-answer">
+                                    Мы предлагаем бесплатные замеры на месте нашей командой экспертов. Наш квалифицированный замерщик приедет к вам бесплатно. Кроме того, будьте уверены, что мы понимаем важность оперативности при составлении сметы проекта. Поэтому мы обязуемся предоставить вам подробную смету в течение одного рабочего дня.
+                                </p>
+                            </li>
+                            <li class="faq__item" data-animate="bottom">
+                                <button type="button" class="faq__item-button" data-spoller>Может ли измениться стоимость ремонта?</button>
+                                <p class="faq__item-answer">
+                                    Обратите внимание, что цены могут варьироваться в пределах ±10%. Это обусловлено такими факторами, как предпочтения клиента в отношении модификаций на месте или конкретных материалов, используемых для проекта. Хотя некоторые материалы могут иметь определенную гибкость в плане цен, мы гарантируем, что все наши закупки у поставщиков осуществляются по конкурентоспособным и разумным ценам.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="feedback" class="feedback">
+                    <div class="feedback__container">
+                        <div class="feedback__body" data-form-body>
+                            <h2 class="feedback__title title title-xl" data-animate="bottom">
+                                Бесплатная консультация
+                            </h2>
+                            <p class="feedback__subtitle title-sm" data-animate="bottom">Наш консультант свяжется с вами и ответит на все ваши вопросы
+                            </p>
+                            <form action="/ajax--act-Request/" method="post" class="feedback__form form">
+                                <div class="form__grid">
+                                    <div class="form__row" data-animate="bottom">
+                                        <label class="form__field">
+                                            <input type="text" name="name" data-required class="form__input" placeholder="">
+                                            <span class="form__field-placeholder">Имя</span>
+                                        </label>
+                                        <span class="form__error">Введите корректное имя</span>
+                                    </div>
+                                    <div class="form__row" data-animate="bottom">
+                                        <label class="form__field">
+                                            <input type="tel" name="phone" data-required class="form__input" placeholder="">
+                                            <span class="form__field-placeholder">Телефон</span>
+                                        </label>
+                                        <span class="form__error">Введите корректный номер телефона</span>
+                                    </div>
+                                    <div class="form__row" data-animate="bottom">
+                                        <label class="form__field">
+                                            <input type="email" name="email" data-required class="form__input" placeholder="">
+                                            <span class="form__field-placeholder">Email</span>
+                                        </label>
+                                        <span class="form__error">Введите корректный email</span>
+                                    </div>
+                                    <div class="form__row row-lg" data-animate="bottom">
+                                        <textarea name="message" class="form__textarea" placeholder="Расскажите о задаче"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form__footer" data-animate="bottom">
+                                    <label class="form__checkbox">
+                                        <input type="checkbox" checked data-required name="privacy" class="form__checkbox-input hidden" hidden>
+                                        <span class="form__checkbox-content">Я прочитал и согласен с <a href="/ru/privacy-policy/" target="_blank">Политикой конфиденциальности</a></span>
+                                    </label>
+                                    <button type="submit" class="form__footer-btn btn btn-secondary">Отправить</button>
+                                </div>
+                                <input type="hidden" name="code" value="consultation">
+                            </form>
+                        </div>
+                        <div data-form-succes class="feedback__succes">
+                            <h2 class="feedback__title title title-xl">
+                                Спасибо!
+                            </h2>
+                            <p class="feedback__subtitle title-sm">Мы уже получили ваш запрос и свяжемся с вами в ближайшее время.</p>
+                        </div>
+                        <div class="feedback__image" data-animate="bottom">
+                            <img src="@img/consult.jpg" class="cover-image" alt="consult">
+                        </div>
+                    </div>
+                </section>
+                <section class="contacts">
+                    <div class="contacts__container">
+                        <h1 class="contacts__title title-xl">Контакты</h1>
+                        <div class="contacts__body contacts__body-lg">
+                            <div class="contacts__grid">
+                                <div class="contacts__main-block icon-phone">
+                                    <a href="tel:+971585368817" class="contacts__main-link">+971 58 536 8817</a>
+                                    <a href="tel:+971179553298" class="contacts__main-link">+971 17 955 3298</a>
+                                    <p class="contacts__main-subtitle">Ответим на все ваши вопросы</p>
+                                </div>
+                                <div class="contacts__main-block icon-location">
+                                    <address class="contacts__main-link">131a 24C St - Al Bada'a, Dubai, UAE</address>
+                                </div>
+                                <div class="contacts__main-block icon-mail">
+                                    <a href="mailto:sales@topsuites.ae" class="contacts__main-link">sales@topsuites.ae</a>
+                                    <p class="contacts__main-subtitle">Ответим на все ваши вопросы</p>
+                                </div>
+                                <div class="contacts__main-block icon-telegram">
+                                    <a href="https://t.me/@topsuits" class="contacts__main-link">TopSuites</a>
+                                    <p class="contacts__main-subtitle">Telegram</p>
+                                </div>
+                                <div class="contacts__main-block icon-instagram">
+                                    <a href="" class="contacts__main-link">TopSuites</a>
+                                    <p class="contacts__main-subtitle">Instagram</p>
+                                </div>
+                                <div class="contacts__main-block icon-youtube">
+                                    <a href="" class="contacts__main-link">TopSuites</a>
+                                    <p class="contacts__main-subtitle">YouTube</p>
+                                </div>
+                            </div>
+                            <div class="contacts__feedback">
+                                <form action="#" class="contacts__form form" data-form-body>
+                                    <div class="form__main">
+                                        <div class="form__title form__title-lg" data-animate="bottom">
+                                            Заказать звонок
+                                        </div>
+                                        <p class="form__subtitle" data-animate="bottom">
+                                            Наш консультант свяжется с вами
+                                            и&nbsp;ответит на все ваши вопросы
+                                        </p>
+                                    </div>
+                                    <div class="form__content">
+                                        <div class="form__rows">
+                                            <div class="form__row" data-animate="bottom">
+                                                <label class="form__field">
+                                                    <input type="text" name="name" data-required class="form__input" placeholder="">
+                                                    <span class="form__field-placeholder">Имя</span>
+                                                </label>
+                                                <span class="form__error">Введите корректное имя</span>
+                                            </div>
+                                            <div class="form__row" data-animate="bottom">
+                                                <label class="form__field">
+                                                    <input type="tel" name="phone" data-required class="form__input" placeholder="">
+                                                    <span class="form__field-placeholder">Телефон</span>
+                                                </label>
+                                                <span class="form__error">Введите корректный номер телефона</span>
+                                            </div>
+                                        </div>
+                                        <label class="form__checkbox form__checkbox-white">
+                                            <input type="checkbox" checked data-required name="privacy" class="form__checkbox-input hidden" hidden>
+                                            <span class="form__checkbox-content">Я прочитал и согласен <a href="" class="form__privacy-link">политикой конфиденциальности</a></span>
+                                        </label>
+                                        <div class="form__footer" data-animate="bottom">
+                                            <button type="submit" class="form__footer-btn btn btn-primary btn-sm btn-fullwidth">Отправить</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div data-form-succes class="contacts__succes">
+                                    <h2 class="contacts__succes-title">
+                                        Спасибо!
+                                    </h2>
+                                    <p class="contacts__subtitle">Мы уже получили ваш запрос и свяжемся с вами в ближайшее время.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            @@include('html/_footer.html', {})
+        </div>
+        @@include('html/_modal.html', {})
+        @@include('html/_js.html', {})
+    </body>
+</html>

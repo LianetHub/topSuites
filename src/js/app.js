@@ -1,7 +1,6 @@
 "use strict";
 
-// import { Fancybox } from '@fancyapps/ui';
-// import Swiper from 'swiper';
+
 import * as devFunctions from './modules/functions.js';
 
 
@@ -14,7 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
     devFunctions.formSubmit();
     devFunctions.intInputMask();
     devFunctions.animation();
-    devFunctions.select()
+    devFunctions.select();
+    // devFunctions.range();
+    devFunctions.beforeSlider();
 
 
     // init Fancybox Gallery
@@ -75,6 +76,22 @@ document.addEventListener('DOMContentLoaded', () => {
             let params = target.dataset.params;
             let modalId = target.getAttribute('href').replace('#', '');
             getParamsToModal(params, modalId);
+        }
+
+        if (target.classList.contains('tabs__item')) {
+            target.classList.add('active');
+            Array.from(target.parentNode.children).forEach(sibling => {
+                if (sibling !== target) sibling.classList.remove('active');
+            });
+
+            const tabContents = target.closest('.tabs-wrapper').querySelectorAll('.tab-content');
+            tabContents?.forEach((content, index) => {
+                if (index === Array.from(target.parentNode.children).indexOf(target)) {
+                    content.classList.add('active');
+                } else {
+                    content.classList.remove('active');
+                }
+            });
 
         }
 
@@ -189,6 +206,49 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
+    // range input
+
+    document.querySelectorAll('.range__input')?.forEach(rangeInput => {
+        getInputRangePrecent(rangeInput);
+
+        rangeInput.addEventListener('input', e => {
+            getInputRangePrecent(e.target);
+        })
+    });
+
+    function getInputRangePrecent(rangeInput) {
+        let currentPrecent = ((rangeInput.value - rangeInput.min) / (rangeInput.max - rangeInput.min)) * 100;
+        rangeInput.style.setProperty('--precent', `${currentPrecent}%`);
+    }
+
+
+    document.querySelectorAll('.range-slider')?.forEach(rangeSlider => {
+        const rangeInput = rangeSlider.querySelector('.range__input');
+        const valueInput = rangeSlider.querySelector('.range-slider__input');
+
+        const syncInputs = (value) => {
+
+            const min = parseFloat(rangeInput.min);
+            const max = parseFloat(rangeInput.max);
+            value = Math.min(Math.max(value, min), max)
+
+
+            rangeInput.value = value;
+            valueInput.value = value;
+            getInputRangePrecent(rangeInput);
+        };
+
+        [rangeInput, valueInput].forEach(input => {
+            input.addEventListener('input', (e) => {
+                let { value } = e.target;
+                syncInputs(value);
+            });
+        });
+
+
+    });
+
+
 
 
 
@@ -228,6 +288,47 @@ document.addEventListener('DOMContentLoaded', () => {
             navigation: {
                 nextEl: '.cases__next',
                 prevEl: '.cases__prev'
+            },
+        })
+    }
+
+    if (document.querySelector('.blog__slider')) {
+        new Swiper('.blog__slider', {
+            slidesPerView: "auto",
+            spaceBetween: 16,
+            navigation: {
+                nextEl: '.blog__next',
+                prevEl: '.blog__prev'
+            },
+            breakpoints: {
+                767.98: {
+                    slidesPerView: 3,
+                    spaceBetween: 31,
+                },
+                1023.98: {
+                    spaceBetween: 92,
+                }
+            }
+        })
+    }
+    if (document.querySelector('.types-repairs__slider')) {
+        new Swiper('.types-repairs__slider', {
+            slidesPerView: 1,
+            pagination: {
+                el: ".types-repairs__pagination",
+                clickable: true
+            }
+        })
+    }
+
+
+    if (document.querySelector('.examples__slider')) {
+        new Swiper('.examples__slider .swiper', {
+            slidesPerView: 1,
+            allowTouchMove: false,
+            navigation: {
+                nextEl: '.examples__next',
+                prevEl: '.examples__prev'
             },
         })
     }
@@ -282,6 +383,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
         });
     }
+
+
+    document.querySelectorAll('.tabs')?.forEach(tabsSlider => {
+        new Swiper(tabsSlider, {
+            slidesPerView: "auto",
+            spaceBetween: 16,
+            slideToClickedSlide: true
+        })
+    })
+
 
 
     if (document.querySelector('.types__list')) {

@@ -2,18 +2,18 @@
 	display: flex;
 	align-items: flex-end;
 	position: relative;
-	background: linear-gradient(180deg, rgba(12, 22, 33, 0) 0%, #0c1621 95.79%), url("@img/main-mobile.jpg") 0 top / cover no-repeat;
+	background: linear-gradient(180deg, rgba(12, 22, 33, 0) 0%, #0c1621 95.79%), url('@img/main-mobile.jpg') 0 top / cover no-repeat;
 	height: rem(585);
 	padding: em(80) em(0);
 	min-height: 100vh;
 	@media (min-width: $md5) {
 		min-height: auto;
 		padding: em(70) em(0);
-		background: linear-gradient(180deg, rgba(12, 22, 33, 0) 0%, #0c1621 100%), url("@img/main-tablet.jpg") 0 0 / cover no-repeat;
+		background: linear-gradient(180deg, rgba(12, 22, 33, 0) 0%, #0c1621 100%), url('@img/main-tablet.jpg') 0 0 / cover no-repeat;
 	}
 	@media (min-width: $md4) {
 		&::before {
-			content: "";
+			content: '';
 			position: absolute;
 			bottom: -3.56rem;
 			left: 40%;
@@ -28,7 +28,7 @@
 		height: rem(826);
 	}
 	@media (min-width: $md3) {
-		background: linear-gradient(180deg, rgba(12, 22, 33, 0) 0%, #0c1621 100%), url("@img/main.jpg") 0 0 / cover no-repeat;
+		background: linear-gradient(180deg, rgba(12, 22, 33, 0) 0%, #0c1621 100%), url('@img/main.jpg') 0 0 / cover no-repeat;
 	}
 	@media (min-width: $md2) {
 		padding: em(90) em(0);
@@ -94,7 +94,7 @@
 		padding: 7.8rem 0 5.06rem;
 		position: relative;
 		&::before {
-			content: "";
+			content: '';
 			position: absolute;
 			top: 50%;
 			left: -17.66rem;
@@ -382,7 +382,7 @@
 	}
 	&.service-blur {
 		&::after {
-			content: "";
+			content: '';
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -395,7 +395,7 @@
 		}
 	}
 	&::before {
-		content: "";
+		content: '';
 		position: absolute;
 		bottom: 0;
 		left: 0;
@@ -536,7 +536,7 @@
 				padding-bottom: 6.7rem;
 				margin-bottom: 4.7rem;
 				&::before {
-					content: "";
+					content: '';
 					position: absolute;
 					bottom: 0;
 					left: 50%;
@@ -836,7 +836,7 @@
 	flex-direction: column;
 	position: relative;
 	&::before {
-		content: "";
+		content: '';
 		position: absolute;
 		top: 0;
 		left: 50%;
@@ -981,7 +981,7 @@
 		padding: 4.19rem 0 4.12rem;
 	}
 	&::before {
-		content: "";
+		content: '';
 		position: absolute;
 		right: calc(100% - 8.81rem);
 		width: 52.75rem;
@@ -1003,7 +1003,7 @@
 	@media (min-width: $md2) {
 		padding: 6.81rem 0 4.12rem;
 		&::after {
-			content: "";
+			content: '';
 			position: absolute;
 			top: 4.5rem;
 			right: -25.94rem;
@@ -1114,7 +1114,7 @@
 		padding: 4.4rem 0 2rem;
 	}
 	&::before {
-		content: "";
+		content: '';
 		position: absolute;
 		top: 2.88rem;
 		left: -16.8rem;
@@ -1188,7 +1188,7 @@
 			width: auto;
 		}
 		&::before {
-			content: "";
+			content: '';
 			position: absolute;
 			// top: 0;
 			// left: 0;
@@ -1272,7 +1272,7 @@
 			max-width: 27rem;
 		}
 		& br {
-			content: "";
+			content: '';
 			display: block;
 			margin-bottom: 1.25rem;
 			@media (min-width: $md4) {
@@ -1324,7 +1324,7 @@
 	}
 	position: relative;
 	&::before {
-		content: "";
+		content: '';
 		position: absolute;
 		top: 40%;
 		left: 47%;
@@ -1510,10 +1510,10 @@
 		padding: 2.5rem 0 7.5rem;
 	}
 	@media (min-width: $md2) {
-		padding: 4.5rem 0 8.4rem;
+		padding: 4.5rem 0 7rem;
 	}
 	&::before {
-		content: "";
+		content: '';
 		position: absolute;
 		left: -20%;
 		top: 0;
@@ -1530,7 +1530,7 @@
 		filter: blur(90px);
 	}
 	&::after {
-		content: "";
+		content: '';
 		position: absolute;
 		right: -50%;
 		@media (min-width: $md2) {
@@ -1559,6 +1559,11 @@
 		}
 		@media (min-width: $md2) {
 			text-align: left;
+		}
+		.font-raleway & {
+			@media (min-width: $md3) {
+				font-size: rem(80);
+			}
 		}
 	}
 	// .faq__list
@@ -1659,8 +1664,9 @@
 	}
 	@media (min-width: $md2) {
 		border-radius: rem(90);
-		padding: 6.8rem 0 6rem;
+		padding: rem(80) 0 rem(85);
 	}
+
 	// .feedback__container
 	&__container {
 		@media (min-width: $md2) {
@@ -1690,6 +1696,9 @@
 	// .feedback__subtitle
 	&__subtitle {
 		margin-top: 0.65rem;
+		.font-raleway & {
+			margin-top: 0rem;
+		}
 	}
 	// .feedback__form
 	&__form {
@@ -1710,7 +1719,7 @@
 			position: relative;
 			height: rem(540);
 			&::before {
-				content: "";
+				content: '';
 				position: absolute;
 				top: rem(103);
 				left: 0;

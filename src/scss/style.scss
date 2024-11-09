@@ -67,10 +67,11 @@ body {
 		.title-xl,
 		.title-lg,
 		.popup__title {
-			line-height: 0.85;
+			line-height: 0.9;
 			padding-bottom: 0.15em;
-			font-weight: 400;
+			font-weight: 300;
 		}
+
 		.form__field-placeholder {
 			top: 1.25rem;
 		}
@@ -200,3 +201,4 @@ body {
 @import 'pages/about';
 @import 'pages/error';
 @import 'pages/privacy';
+@import 'pages/service';
