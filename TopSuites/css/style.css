@@ -1393,9 +1393,9 @@ body.lock-filter {
   font-size: 0.875rem;
   padding: 0.625rem;
   width: auto;
-  -webkit-transition: color 0.3s ease;
-  -o-transition: color 0.3s ease;
-  transition: color 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .tabs__item span {
@@ -4825,6 +4825,10 @@ body.lock-filter {
   gap: 0.875rem;
 }
 
+.calc__total-form .form__row {
+  position: relative;
+}
+
 .calc__total-form .form__error {
   font-size: 0.65em;
 }
@@ -5707,6 +5711,10 @@ body.lock-filter {
     grid-column: span 2;
   }
 
+  .calc__total:has(.form__input._error) {
+    padding-bottom: 2rem;
+  }
+
   .calc__total-value {
     font-size: 1.625rem;
   }
@@ -5715,6 +5723,11 @@ body.lock-filter {
     gap: 1.5rem;
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .calc__total-form .form__error {
+    position: absolute;
+    top: 100%;
   }
 
   .range-slider {
@@ -5839,6 +5852,15 @@ body.lock-filter {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+
+  .types-repairs__form .form__row {
+    position: relative;
+  }
+
+  .types-repairs__form .form__row .form__error {
+    position: absolute;
+    top: 100%;
   }
 
   .reviews {
@@ -9583,6 +9605,10 @@ body.lock-filter {
 @media (max-width: 767.98px) and (min-width: 575.98px) {
   body.font-raleway .main__title {
     font-size: 3.5rem;
+  }
+
+  .types-repairs__footer:has(.form__input._error) {
+    padding-bottom: 3.5rem;
   }
 }
 

@@ -1,5 +1,5 @@
 .service-page {
-	--background-image: url('@img/service-bg.jpg');
+	--background-image: url("@img/service-bg.jpg");
 	background: linear-gradient(180deg, rgba(12, 22, 33, 0) 30%, #0c1621 100%),
 		linear-gradient(180deg, rgba($color: #000000, $alpha: 0.5) 0%, rgba($color: #000000, $alpha: 0.5) 100%), var(--background-image) 100% 0 / cover no-repeat;
 	padding: rem(66) em(0) rem(49) em(0);
@@ -10,7 +10,7 @@
 		background-position: 0 0;
 		padding: rem(100) em(0) rem(70) em(0);
 		&::before {
-			content: '';
+			content: "";
 			position: absolute;
 			bottom: -5%;
 			left: 0;
@@ -247,6 +247,9 @@
 		@media (min-width: $md5) {
 			padding: rem(18) rem(24);
 			grid-column: span 2;
+			&:has(.form__input._error) {
+				padding-bottom: rem(32);
+			}
 		}
 		@media (min-width: $md4) {
 			gap: 0;
@@ -313,7 +316,14 @@
 				font-size: rem(18);
 			}
 		}
+		.form__row {
+			position: relative;
+		}
 		.form__error {
+			@media (min-width: $md5) {
+				position: absolute;
+				top: 100%;
+			}
 			font-size: 0.65em;
 			@media (min-width: $md2) {
 				font-size: 0.75em;
@@ -818,7 +828,7 @@
 				padding-left: 2.5rem;
 			}
 			&::before {
-				content: '';
+				content: "";
 				position: absolute;
 				top: 0;
 				left: 0;
@@ -965,6 +975,13 @@
 		display: grid;
 		gap: 1.5rem;
 		padding: 1.5rem 0.87rem 1.5rem;
+		@media (max-width: $md4) {
+			@media (min-width: $md5) {
+				&:has(.form__input._error) {
+					padding-bottom: 3.5rem;
+				}
+			}
+		}
 		@media (min-width: $md4) {
 			padding: 1.5rem 2.44rem 2.56rem;
 		}
@@ -1014,6 +1031,13 @@
 		}
 		.form__row {
 			width: 100%;
+			@media (min-width: $md5) {
+				position: relative;
+				.form__error {
+					position: absolute;
+					top: 100%;
+				}
+			}
 		}
 		.btn {
 			min-width: 10.8125rem;
@@ -1433,7 +1457,7 @@
 			}
 		}
 		&::after {
-			content: '';
+			content: "";
 			position: absolute;
 			top: -2.9rem;
 			left: 50%;

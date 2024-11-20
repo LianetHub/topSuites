@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     devFunctions.select();
     // devFunctions.range();
     devFunctions.beforeSlider();
+    devFunctions.calc();
 
 
     // init Fancybox Gallery

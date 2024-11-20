@@ -38,16 +38,16 @@
                         </ul>
                         <div class="service-page__btns" data-animate="bottom">
                             <a href="" class="service-page__btn btn btn-primary icon-plus">Заказать услугу</a>
-                            <a href="" class="service-page__btn btn btn-primary-outline">Рассчитать стоимость</a>
+                            <a href="#calc" class="service-page__btn btn btn-primary-outline">Рассчитать стоимость</a>
                         </div>
                     </div>
                 </section>
-                <section class="calc">
+                <section id="calc" class="calc">
                     <div class="calc__container">
                         <h2 class="calc__title title-xl" data-animate="bottom">
                             Калькулятор
                         </h2>
-                        <div class="calc__body" data-animate="bottom">
+                        <form action="#" class="calc__body" data-animate="bottom">
                             <div class="calc__block calc__block-lg">
                                 <div class="calc__block-caption">
                                     Площадь, м<sup>2</sup>
@@ -189,7 +189,7 @@
                                         2 300 032 AED
                                     </div>
                                 </div>
-                                <form action="#" class="calc__total-form">
+                                <div class="calc__total-form">
                                     <div class="form__row">
                                         <label class="form__field">
                                             <input type="tel" name="phone" data-required class="form__input" placeholder="">
@@ -198,9 +198,9 @@
                                         <span class="form__error">Введите корректный номер телефона</span>
                                     </div>
                                     <button type="submit" class="btn btn-primary btn-sm">Вызвать замерщика</button>
-                                </form>
+                                </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </section>
                 <section class="examples">
