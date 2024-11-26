@@ -5711,10 +5711,6 @@ body.lock-filter {
     grid-column: span 2;
   }
 
-  .calc__total:has(.form__input._error) {
-    padding-bottom: 2rem;
-  }
-
   .calc__total-value {
     font-size: 1.625rem;
   }
@@ -9609,6 +9605,12 @@ body.lock-filter {
 
   .types-repairs__footer:has(.form__input._error) {
     padding-bottom: 3.5rem;
+  }
+}
+
+@media (max-width: 1263.98px) and (min-width: 575.98px) {
+  .calc__total:has(.form__input._error) {
+    padding-bottom: 2rem;
   }
 }
 

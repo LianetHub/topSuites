@@ -247,8 +247,12 @@
 		@media (min-width: $md5) {
 			padding: rem(18) rem(24);
 			grid-column: span 2;
-			&:has(.form__input._error) {
-				padding-bottom: rem(32);
+		}
+		@media (max-width: $md2) {
+			@media (min-width: $md5) {
+				&:has(.form__input._error) {
+					padding-bottom: rem(32);
+				}
 			}
 		}
 		@media (min-width: $md4) {
