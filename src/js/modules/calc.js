@@ -1,4 +1,7 @@
 export const calc = () => {
+
+    if (!document.getElementById('#calc')) return;
+
     const squareInput = document.querySelector('input[name="square"]');
     const rangeInput = document.querySelector('input[name="range"]');
     const roomsInputs = document.querySelectorAll('input[name="rooms"]');

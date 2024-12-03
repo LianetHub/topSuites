@@ -57,6 +57,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
+
+
     // event handlers
     document.addEventListener('click', (e) => {
         const target = e.target;
@@ -93,7 +95,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     content.classList.remove('active');
                 }
             });
-
         }
 
 

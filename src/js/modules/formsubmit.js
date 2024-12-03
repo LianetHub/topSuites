@@ -47,7 +47,6 @@ export const formSubmit = () => {
 			} else {
 				// fail();
 				console.log('fail');
-				// getSucces(form);
 				form.classList.remove("_sending");
 			}
 			/*form send script*/
@@ -121,10 +120,22 @@ export const formSubmit = () => {
 
 	function getSucces(form) {
 		const formBody = form.closest('[data-form-body]');
-		const succesBlock = formBody.parentElement.querySelector('[data-form-succes]');
 
-		formBody.classList.add('hidden');
-		succesBlock.classList.add('visible');
+		if (formBody) {
+			const succesBlock = formBody.parentElement.querySelector('[data-form-succes]');
+			formBody.classList.add('hidden');
+			succesBlock.classList.add('visible');
+		}
+
+		const formPopup = form.querySelector('.popup');
+
+		if (formPopup) {
+			Fancybox.show([{
+				src: formPopup,
+				type: 'html'
+			}])
+		}
+
 
 	}
 
