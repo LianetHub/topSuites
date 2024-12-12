@@ -97,6 +97,13 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
+        if (target.matches('.where__more')) {
+            target.previousElementSibling?.querySelectorAll('.where__item.hidden')?.forEach(whereItem => {
+                whereItem.classList.remove('hidden');
+            });
+            target.remove()
+        }
+
 
     })
 

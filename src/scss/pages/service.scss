@@ -1314,6 +1314,15 @@
 	}
 	// .where__item-column
 	&__item-column {
+		@media (min-width: $md5) {
+			flex: 0 0 calc(33.333% - 0.66rem);
+		}
+		@media (min-width: $md3) {
+			flex: 0 0 rem(220);
+		}
+		@media (min-width: $md2) {
+			flex: 0 0 rem(250);
+		}
 	}
 	// .where__item-caption
 	&__item-caption {

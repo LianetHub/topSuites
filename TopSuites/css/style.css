@@ -372,7 +372,7 @@ body.lock-filter {
           flex-direction: column-reverse;
 }
 
-.fancybox__caption {
+design_re6 .fancybox__caption {
   color: #fff;
   text-align: center;
   padding-top: 3rem;
@@ -384,7 +384,7 @@ body.lock-filter {
       flex-shrink: 0;
 }
 
-.fancybox__footer .fancybox__caption {
+.fancybox__footer design_re6 .fancybox__caption {
   padding: 0.25rem 0 0.875rem;
   margin-bottom: 0;
 }
@@ -449,18 +449,44 @@ body.lock-filter {
 
 .f-button.is-prev::before {
   font-size: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .f-button.is-prev svg {
   display: none;
 }
 
+.f-button.is-prev:hover {
+  background-color: transparent;
+}
+
 .f-button.is-next::before {
   font-size: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .f-button.is-next svg {
   display: none;
+}
+
+.f-button.is-next:hover {
+  background-color: transparent;
 }
 
 .popup {
@@ -1400,6 +1426,7 @@ body.lock-filter {
 
 .tabs__item span {
   display: none;
+  pointer-events: none;
 }
 
 .tabs__item.active {
@@ -5923,6 +5950,12 @@ body.lock-filter {
             justify-content: space-between;
   }
 
+  .where__item-column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(33.333% - 0.66rem);
+            flex: 0 0 calc(33.333% - 0.66rem);
+  }
+
   .where__item-caption {
     line-height: 99%;
   }
@@ -7680,6 +7713,12 @@ body.lock-filter {
   .range-slider__body {
     max-width: 22.8125rem;
   }
+
+  .where__item-column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 13.75rem;
+            flex: 0 0 13.75rem;
+  }
 }
 
 @media (min-width: 1263.98px) {
@@ -9096,6 +9135,12 @@ body.lock-filter {
 
   .where__item-body {
     gap: 5.3125rem;
+  }
+
+  .where__item-column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 15.625rem;
+            flex: 0 0 15.625rem;
   }
 
   .where__item-caption {

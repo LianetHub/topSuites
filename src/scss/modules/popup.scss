@@ -24,7 +24,7 @@
 	flex-direction: column-reverse;
 }
 
-.fancybox__caption {
+design_re6 .fancybox__caption {
 	color: #fff;
 	text-align: center;
 	padding-top: rem(48);
@@ -144,6 +144,9 @@
 		&::before {
 			@extend %ic, .icon-left;
 			font-size: 4rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 		& svg {
 			display: none;
@@ -151,17 +154,26 @@
 		@media (min-width: $md4) {
 			left: rem(50) !important;
 		}
+		&:hover {
+			background-color: transparent;
+		}
 	}
 	&.is-next {
 		&::before {
 			@extend %ic, .icon-right;
 			font-size: 4rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 		@media (min-width: $md4) {
 			right: rem(50) !important;
 		}
 		& svg {
 			display: none;
+		}
+		&:hover {
+			background-color: transparent;
 		}
 	}
 }
