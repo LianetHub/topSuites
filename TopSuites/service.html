@@ -45,13 +45,13 @@
   <!-- Twitter -->
 
   <!-- plugins -->
-  <link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20241212212531" />
-  <link rel="stylesheet" href="css/libs/fancybox.css?_v=20241212212531" />
-  <link rel="stylesheet" href="css/libs/no-ui-slider.css?_v=20241212212531" />
+  <link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20241219215239" />
+  <link rel="stylesheet" href="css/libs/fancybox.css?_v=20241219215239" />
+  <link rel="stylesheet" href="css/libs/no-ui-slider.css?_v=20241219215239" />
   <!-- plugins -->
 
-  <link rel="stylesheet" href="css/reset.min.css?_v=20241212212531" />
-  <link rel="stylesheet" href="css/style.min.css?_v=20241212212531" />
+  <link rel="stylesheet" href="css/reset.min.css?_v=20241219215239" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20241219215239" />
 
 </head>
 
@@ -685,10 +685,10 @@
                   </div>
                   <div class="types-repairs__slider swiper">
                     <div class="swiper-wrapper">
-                      <a href="img/gallery/desgin_re1.jpg" data-fancybox="types-gallery-2" class="types-repairs__slide swiper-slide">
+                      <a href="img/gallery/design_re1.jpg" data-fancybox="types-gallery-2" class="types-repairs__slide swiper-slide">
                         <picture>
-                          <source srcset="img/gallery/desgin_re1.webp" type="image/webp">
-                          <img src="img/gallery/desgin_re1.jpg" class="cover-image" alt="Фото проекта">
+                          <source srcset="img/gallery/design_re1.webp" type="image/webp">
+                          <img src="img/gallery/design_re1.jpg" class="cover-image" alt="Фото проекта">
                         </picture>
                       </a>
                       <a href="img/gallery/design_re2.jpg" data-fancybox="types-gallery-2" class="types-repairs__slide swiper-slide">
@@ -738,21 +738,28 @@
               </div>
             </div>
             <form action="#" class="types-repairs__form">
-              <div class="form__row">
-                <label class="form__field">
-                  <input type="text" name="name" data-required class="form__input" placeholder="">
-                  <span class="form__field-placeholder">Имя</span>
-                </label>
-                <span class="form__error">Введите корректное имя</span>
+              <div class="types-repairs__form-top">
+                <div class="form__row">
+                  <label class="form__field">
+                    <input type="text" name="name" data-required class="form__input" placeholder="">
+                    <span class="form__field-placeholder">Имя</span>
+                  </label>
+                  <span class="form__error">Введите корректное имя</span>
+                </div>
+                <div class="form__row">
+                  <label class="form__field">
+                    <input type="tel" name="phone" data-required class="form__input" placeholder="">
+                    <span class="form__field-placeholder">Телефон</span>
+                  </label>
+                  <span class="form__error">Введите корректный номер телефона</span>
+                </div>
+                <button type="submit" class="btn btn-primary btn-sm">Отправить</button>
               </div>
-              <div class="form__row">
-                <label class="form__field">
-                  <input type="tel" name="phone" data-required class="form__input" placeholder="">
-                  <span class="form__field-placeholder">Телефон</span>
-                </label>
-                <span class="form__error">Введите корректный номер телефона</span>
-              </div>
-              <button type="submit" class="btn btn-primary btn-sm">Отправить</button>
+              <label class="form__checkbox form__checkbox-white">
+                <input type="checkbox" checked data-required name="privacy" class="form__checkbox-input hidden" hidden>
+                <span class="form__checkbox-content">Я прочитал и согласен <a href="" class="form__privacy-link">политикой конфиденциальности</a>
+                </span>
+              </label>
               <div class="popup">
                 <div class="popup__body">
                   <div class="popup__title">Thank you!</div>
@@ -1975,22 +1982,22 @@
               <div class="contacts__main-block icon-location">
                 <address class="contacts__main-link">131a 24C St - Al Bada'a, Dubai, UAE</address>
               </div>
-              <div class="contacts__main-block icon-mail">
-                <a href="mailto:sales@topsuites.ae" class="contacts__main-link">sales@topsuites.ae</a>
-                <p class="contacts__main-subtitle">Ответим на все ваши вопросы</p>
-              </div>
-              <div class="contacts__main-block icon-telegram">
-                <a href="https://t.me/@topsuits" class="contacts__main-link">TopSuites</a>
-                <p class="contacts__main-subtitle">Telegram</p>
-              </div>
-              <div class="contacts__main-block icon-instagram">
-                <a href="" class="contacts__main-link">TopSuites</a>
-                <p class="contacts__main-subtitle">Instagram</p>
-              </div>
-              <div class="contacts__main-block icon-youtube">
-                <a href="" class="contacts__main-link">TopSuites</a>
-                <p class="contacts__main-subtitle">YouTube</p>
-              </div>
+              <a href="mailto:sales@topsuites.ae" class="contacts__main-block icon-mail">
+                <span class="contacts__main-link">sales@topsuites.ae</span>
+                <span class="contacts__main-subtitle">Ответим на все ваши вопросы</span>
+              </a>
+              <a href="https://t.me/@topsuits" class="contacts__main-block icon-telegram">
+                <span class="contacts__main-link">TopSuites</span>
+                <span class="contacts__main-subtitle">Telegram</span>
+              </a>
+              <a href="" class="contacts__main-block icon-instagram">
+                <span class="contacts__main-link">TopSuites</span>
+                <span class="contacts__main-subtitle">Instagram</span>
+              </a>
+              <a href="" class="contacts__main-block icon-youtube">
+                <span class="contacts__main-link">TopSuites</span>
+                <span class="contacts__main-subtitle">YouTube</span>
+              </a>
             </div>
             <div class="contacts__feedback">
               <form action="#" class="contacts__form form" data-form-body>
@@ -2133,12 +2140,12 @@
     </div>
   </div>
   <!-- plugins -->
-  <script src="js/libs/swiper-bundle.min.js?_v=20241212212531"></script>
-  <script src="js/libs/fancybox.min.js?_v=20241212212531"></script>
-  <script src="js/libs/nouislider.min.js?_v=20241212212531"></script>
+  <script src="js/libs/swiper-bundle.min.js?_v=20241219215239"></script>
+  <script src="js/libs/fancybox.min.js?_v=20241219215239"></script>
+  <script src="js/libs/nouislider.min.js?_v=20241219215239"></script>
   <!-- plugins -->
 
-  <script src="js/app.min.js?_v=20241212212531"></script>
+  <script src="js/app.min.js?_v=20241219215239"></script>
 </body>
 
 </html>

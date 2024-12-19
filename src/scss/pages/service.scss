@@ -979,13 +979,13 @@
 		display: grid;
 		gap: 1.5rem;
 		padding: 1.5rem 0.87rem 1.5rem;
-		@media (max-width: $md4) {
-			@media (min-width: $md5) {
-				&:has(.form__input._error) {
-					padding-bottom: 3.5rem;
-				}
-			}
-		}
+		// @media (max-width: $md4) {
+		// 	@media (min-width: $md5) {
+		// 		&:has(.form__input._error) {
+		// 			padding-bottom: 3.5rem;
+		// 		}
+		// 	}
+		// }
 		@media (min-width: $md4) {
 			padding: 1.5rem 2.44rem 2.56rem;
 		}
@@ -1023,8 +1023,16 @@
 	}
 	// .types-repairs__form
 	&__form {
+		.form__checkbox {
+			margin-top: 0.75rem;
+			@media (min-width: $md2) {
+				margin-top: 1.5rem;
+			}
+		}
+	}
+	// .types-repairs__form-top
+	&__form-top {
 		display: flex;
-
 		gap: 0.75rem;
 		flex-direction: column;
 		@media (min-width: $md5) {
@@ -1036,15 +1044,18 @@
 		.form__row {
 			width: 100%;
 			@media (min-width: $md5) {
-				position: relative;
-				.form__error {
-					position: absolute;
-					top: 100%;
-				}
+				// position: relative;
+				// .form__error {
+				// 	position: absolute;
+				// 	top: 100%;
+				// }
 			}
 		}
 		.btn {
 			min-width: 10.8125rem;
+			@media (min-width: $md5) {
+				align-self: flex-start;
+			}
 		}
 	}
 }

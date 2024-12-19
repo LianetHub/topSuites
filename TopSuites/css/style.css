@@ -11,7 +11,7 @@
 @font-face {
   font-family: icons;
   font-display: swap;
-  src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
+  src: url("../fonts/icons-v2.woff2") format("woff2"), url("../fonts/icons-v2.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -2799,11 +2799,19 @@ design_re6 .fancybox__caption {
   height: 23.95638rem;
 }
 
+.services__grid .service:has(.service__btn) .service__desc {
+  min-height: 8.125rem;
+}
+
 .services__grid .service__desc {
   min-height: 8.125rem;
   font-weight: 600;
   font-size: 1.125rem;
   padding: 0.5rem 0rem 3rem;
+}
+
+.services__grid .service__btn {
+  margin-bottom: 2rem;
 }
 
 .services__controls {
@@ -2943,6 +2951,12 @@ design_re6 .fancybox__caption {
   transition: color 0.3s ease 0s;
   padding: 0.5rem;
   min-height: 6.25rem;
+}
+
+.service__btn {
+  z-index: 2;
+  margin-top: 1em;
+  min-width: 60%;
 }
 
 .cases {
@@ -4159,10 +4173,13 @@ design_re6 .fancybox__caption {
 .contacts__main-link {
   line-height: 1.4;
   color: #fff;
+  font-size: 1.25rem;
+}
+
+.contacts__main-link:is(a) {
   -webkit-transition: color 0.3s ease 0s;
   -o-transition: color 0.3s ease 0s;
   transition: color 0.3s ease 0s;
-  font-size: 1.25rem;
 }
 
 .contacts__main-subtitle {
@@ -4613,6 +4630,22 @@ design_re6 .fancybox__caption {
 .error__btn {
   margin-top: 1.44rem;
   width: 100%;
+}
+
+.font-raleway .privacy .privacy__body a {
+  text-decoration: underline;
+}
+
+.font-raleway .privacy .privacy__body h2:not(:first-child),
+.font-raleway .privacy .privacy__body h3:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
+.font-raleway .privacy .privacy__body h2 + p,
+.font-raleway .privacy .privacy__body h2 ul,
+.font-raleway .privacy .privacy__body h3 + p,
+.font-raleway .privacy .privacy__body h3 ul {
+  margin-top: 1.25rem;
 }
 
 .privacy__title {
@@ -5208,7 +5241,11 @@ design_re6 .fancybox__caption {
   font-size: 0.875rem;
 }
 
-.types-repairs__form {
+.types-repairs__form .form__checkbox {
+  margin-top: 0.75rem;
+}
+
+.types-repairs__form-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5219,11 +5256,11 @@ design_re6 .fancybox__caption {
           flex-direction: column;
 }
 
-.types-repairs__form .form__row {
+.types-repairs__form-top .form__row {
   width: 100%;
 }
 
-.types-repairs__form .btn {
+.types-repairs__form-top .btn {
   min-width: 10.8125rem;
 }
 
@@ -5651,6 +5688,18 @@ design_re6 .fancybox__caption {
     width: auto;
   }
 
+  .font-raleway .privacy .privacy__body h2:not(:first-child),
+  .font-raleway .privacy .privacy__body h3:not(:first-child) {
+    margin-top: 4.5rem;
+  }
+
+  .font-raleway .privacy .privacy__body h2 + p,
+  .font-raleway .privacy .privacy__body h2 ul,
+  .font-raleway .privacy .privacy__body h3 + p,
+  .font-raleway .privacy .privacy__body h3 ul {
+    margin-top: 2rem;
+  }
+
   .privacy__body {
     margin-top: 2.75rem;
   }
@@ -5870,20 +5919,16 @@ design_re6 .fancybox__caption {
     font-size: 2rem;
   }
 
-  .types-repairs__form {
+  .types-repairs__form-top {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
 
-  .types-repairs__form .form__row {
-    position: relative;
-  }
-
-  .types-repairs__form .form__row .form__error {
-    position: absolute;
-    top: 100%;
+  .types-repairs__form-top .btn {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
 
   .reviews {
@@ -7682,6 +7727,12 @@ design_re6 .fancybox__caption {
     margin-top: 1.81rem;
   }
 
+  .font-raleway .privacy .privacy__body p,
+  .font-raleway .privacy .privacy__body ul,
+  .font-raleway .privacy .privacy__body ol {
+    font-size: 1.375rem;
+  }
+
   .privacy__body {
     margin-top: 3.56rem;
   }
@@ -9062,7 +9113,11 @@ design_re6 .fancybox__caption {
     font-size: 1rem;
   }
 
-  .types-repairs__form {
+  .types-repairs__form .form__checkbox {
+    margin-top: 1.5rem;
+  }
+
+  .types-repairs__form-top {
     gap: 1.5rem;
   }
 
@@ -9647,10 +9702,6 @@ design_re6 .fancybox__caption {
   body.font-raleway .main__title {
     font-size: 3.5rem;
   }
-
-  .types-repairs__footer:has(.form__input._error) {
-    padding-bottom: 3.5rem;
-  }
 }
 
 @media (max-width: 1263.98px) and (min-width: 575.98px) {
@@ -9721,7 +9772,7 @@ design_re6 .fancybox__caption {
     color: #ffeab4;
   }
 
-  .service:hover .service__desc {
+  .service:is(a):hover .service__desc {
     color: #ffeab4;
   }
 
@@ -9752,7 +9803,11 @@ design_re6 .fancybox__caption {
     text-decoration: none;
   }
 
-  .contacts__main-link:hover {
+  .contacts__main-block:is(a):hover .contacts__main-link {
+    color: #ffeab4;
+  }
+
+  .contacts__main-link:is(a):hover {
     color: #ffeab4;
   }
 
@@ -9763,6 +9818,10 @@ design_re6 .fancybox__caption {
 
   .more__link:hover {
     color: #ffeab4;
+  }
+
+  .font-raleway .privacy .privacy__body a:hover {
+    text-decoration: none;
   }
 
   .progress__item-btn:hover {

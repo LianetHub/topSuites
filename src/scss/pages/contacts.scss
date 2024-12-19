@@ -176,19 +176,30 @@
 				display: none;
 			}
 		}
+		&:is(a) {
+			@media (any-hover: hover) {
+				&:hover {
+					.contacts__main-link {
+						color: $yellow;
+					}
+				}
+			}
+		}
 	}
 	// .contacts__main-link
 	&__main-link {
 		line-height: 1.4;
 		color: #fff;
-		transition: color 0.3s ease 0s;
 		font-size: 1.25rem;
 		@media (min-width: $md2) {
 			font-size: 1.5rem;
 		}
-		@media (any-hover: hover) {
-			&:hover {
-				color: $yellow;
+		&:is(a) {
+			transition: color 0.3s ease 0s;
+			@media (any-hover: hover) {
+				&:hover {
+					color: $yellow;
+				}
 			}
 		}
 	}

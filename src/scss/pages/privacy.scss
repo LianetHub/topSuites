@@ -1,4 +1,40 @@
 .privacy {
+	.font-raleway & {
+		.privacy__body {
+			a {
+				text-decoration: underline;
+				@media (any-hover: hover) {
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+			& p,
+			ul,
+			ol {
+				@media (min-width: $md3) {
+					font-size: rem(22);
+				}
+			}
+			& h2,
+			h3 {
+				&:not(:first-child) {
+					margin-top: 1.5rem;
+					@media (min-width: $md5) {
+						margin-top: 4.5rem;
+					}
+				}
+
+				& + p,
+				ul {
+					margin-top: 1.25rem;
+					@media (min-width: $md5) {
+						margin-top: 2rem;
+					}
+				}
+			}
+		}
+	}
 	// .privacy__container
 	&__container {
 	}

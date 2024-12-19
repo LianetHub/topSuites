@@ -2,18 +2,18 @@
 	display: flex;
 	align-items: flex-end;
 	position: relative;
-	background: linear-gradient(180deg, rgba(12, 22, 33, 0) 0%, #0c1621 95.79%), url('@img/main-mobile.jpg') 0 top / cover no-repeat;
+	background: linear-gradient(180deg, rgba(12, 22, 33, 0) 0%, #0c1621 95.79%), url("@img/main-mobile.jpg") 0 top / cover no-repeat;
 	height: rem(585);
 	padding: em(80) em(0);
 	min-height: 100vh;
 	@media (min-width: $md5) {
 		min-height: auto;
 		padding: em(70) em(0);
-		background: linear-gradient(180deg, rgba(12, 22, 33, 0) 0%, #0c1621 100%), url('@img/main-tablet.jpg') 0 0 / cover no-repeat;
+		background: linear-gradient(180deg, rgba(12, 22, 33, 0) 0%, #0c1621 100%), url("@img/main-tablet.jpg") 0 0 / cover no-repeat;
 	}
 	@media (min-width: $md4) {
 		&::before {
-			content: '';
+			content: "";
 			position: absolute;
 			bottom: -3.56rem;
 			left: 40%;
@@ -28,7 +28,7 @@
 		height: rem(826);
 	}
 	@media (min-width: $md3) {
-		background: linear-gradient(180deg, rgba(12, 22, 33, 0) 0%, #0c1621 100%), url('@img/main.jpg') 0 0 / cover no-repeat;
+		background: linear-gradient(180deg, rgba(12, 22, 33, 0) 0%, #0c1621 100%), url("@img/main.jpg") 0 0 / cover no-repeat;
 	}
 	@media (min-width: $md2) {
 		padding: em(90) em(0);
@@ -94,7 +94,7 @@
 		padding: 7.8rem 0 5.06rem;
 		position: relative;
 		&::before {
-			content: '';
+			content: "";
 			position: absolute;
 			top: 50%;
 			left: -17.66rem;
@@ -288,6 +288,11 @@
 			@media (min-width: $md2) {
 				height: 31.75rem;
 			}
+			&:has(.service__btn) {
+				.service__desc {
+					min-height: rem(130);
+				}
+			}
 		}
 		.service__desc {
 			min-height: rem(130);
@@ -304,6 +309,9 @@
 				min-height: rem(175);
 				font-size: rem(24);
 			}
+		}
+		.service__btn {
+			margin-bottom: 2rem;
 		}
 	}
 	// .services__title
@@ -382,7 +390,7 @@
 	}
 	&.service-blur {
 		&::after {
-			content: '';
+			content: "";
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -395,7 +403,7 @@
 		}
 	}
 	&::before {
-		content: '';
+		content: "";
 		position: absolute;
 		bottom: 0;
 		left: 0;
@@ -435,14 +443,16 @@
 			// height: calc(100% + rem(160));
 		}
 	}
-	@media (any-hover: hover) {
-		&:hover {
-			.service__desc {
-				color: $yellow;
+	&:is(a) {
+		@media (any-hover: hover) {
+			&:hover {
+				.service__desc {
+					color: $yellow;
+				}
+				// .service__image img {
+				// 	transform: scale(1.05);
+				// }
 			}
-			// .service__image img {
-			// 	transform: scale(1.05);
-			// }
 		}
 	}
 	// .service__image
@@ -486,6 +496,11 @@
 			font-size: rem(24);
 			line-height: 1.4;
 		}
+	}
+	&__btn {
+		z-index: 2;
+		margin-top: 1em;
+		min-width: 60%;
 	}
 }
 
@@ -536,7 +551,7 @@
 				padding-bottom: 6.7rem;
 				margin-bottom: 4.7rem;
 				&::before {
-					content: '';
+					content: "";
 					position: absolute;
 					bottom: 0;
 					left: 50%;
@@ -836,7 +851,7 @@
 	flex-direction: column;
 	position: relative;
 	&::before {
-		content: '';
+		content: "";
 		position: absolute;
 		top: 0;
 		left: 50%;
@@ -981,7 +996,7 @@
 		padding: 4.19rem 0 4.12rem;
 	}
 	&::before {
-		content: '';
+		content: "";
 		position: absolute;
 		right: calc(100% - 8.81rem);
 		width: 52.75rem;
@@ -1003,7 +1018,7 @@
 	@media (min-width: $md2) {
 		padding: 6.81rem 0 4.12rem;
 		&::after {
-			content: '';
+			content: "";
 			position: absolute;
 			top: 4.5rem;
 			right: -25.94rem;
@@ -1114,7 +1129,7 @@
 		padding: 4.4rem 0 2rem;
 	}
 	&::before {
-		content: '';
+		content: "";
 		position: absolute;
 		top: 2.88rem;
 		left: -16.8rem;
@@ -1188,7 +1203,7 @@
 			width: auto;
 		}
 		&::before {
-			content: '';
+			content: "";
 			position: absolute;
 			// top: 0;
 			// left: 0;
@@ -1272,7 +1287,7 @@
 			max-width: 27rem;
 		}
 		& br {
-			content: '';
+			content: "";
 			display: block;
 			margin-bottom: 1.25rem;
 			@media (min-width: $md4) {
@@ -1324,7 +1339,7 @@
 	}
 	position: relative;
 	&::before {
-		content: '';
+		content: "";
 		position: absolute;
 		top: 40%;
 		left: 47%;
@@ -1513,7 +1528,7 @@
 		padding: 4.5rem 0 7rem;
 	}
 	&::before {
-		content: '';
+		content: "";
 		position: absolute;
 		left: -20%;
 		top: 0;
@@ -1530,7 +1545,7 @@
 		filter: blur(90px);
 	}
 	&::after {
-		content: '';
+		content: "";
 		position: absolute;
 		right: -50%;
 		@media (min-width: $md2) {
@@ -1719,7 +1734,7 @@
 			position: relative;
 			height: rem(540);
 			&::before {
-				content: '';
+				content: "";
 				position: absolute;
 				top: rem(103);
 				left: 0;
