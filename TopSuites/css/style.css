@@ -11,7 +11,7 @@
 @font-face {
   font-family: icons;
   font-display: swap;
-  src: url("../fonts/icons-v2.woff2") format("woff2"), url("../fonts/icons-v2.woff") format("woff");
+  src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -158,6 +158,18 @@
 [class^=icon-]:before,
 [class*=" icon-"]:before {
   display: block;
+}
+
+.icon-calculator:before {
+  content: "\e910";
+}
+
+.icon-telegram-fill:before {
+  content: "\e911";
+}
+
+.icon-whatsapp-fill:before {
+  content: "\e912";
 }
 
 .icon-add:before,
@@ -1116,6 +1128,59 @@ design_re6 .fancybox__caption {
   background-size: auto;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.widgets {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+  border-radius: 0.3333333333em 0em 0em 0.3333333333em;
+  border-top: 0.0625rem solid rgba(255, 255, 255, 0.1);
+  border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.1);
+  border-left: 0.0625rem solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(0.25em);
+  -webkit-backdrop-filter: blur(0.25em);
+  padding: 0.45em 0.3333333333em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10;
+  min-width: 1.7291666667em;
+  font-size: 1.75rem;
+}
+
+.widgets__item {
+  color: #ffeab4;
+  width: 1em;
+  height: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.widgets__separator {
+  background: rgba(255, 255, 255, 0.1);
+  display: block;
+  width: 1em;
+  height: 0.0625rem;
+  margin: 0.3541666667em 0;
 }
 
 .title-xl {
@@ -4946,6 +5011,61 @@ design_re6 .fancybox__caption {
   margin-top: 1.5rem;
 }
 
+.layout {
+  padding: 2.5rem 0 2.5rem;
+}
+
+.layout__list {
+  margin-top: 4rem;
+  display: -ms-grid;
+  display: grid;
+}
+
+.layout__item {
+  padding: 2.5rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border: 0.0625rem solid #34414f;
+}
+
+.layout__item-caption {
+  line-height: 99%;
+  font-size: 1.5rem;
+}
+
+.layout__item-picture {
+  margin-top: 1.5rem;
+  border: 0.0625rem solid #34414f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 4.6rem 4rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.layout__item-btn {
+  margin-top: 1.5rem;
+}
+
 .deadlines {
   padding: 1.5rem 0 1.875rem;
 }
@@ -4962,6 +5082,33 @@ design_re6 .fancybox__caption {
   border-bottom: 0.0625rem solid #34414f;
   border-right: 0.0625rem solid #34414f;
   padding: 1rem 0.875rem;
+}
+
+.deadlines__item:has(.deadlines__item-image) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.deadlines__item-column {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding-top: 0.5rem;
+}
+
+.deadlines__item-image {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  max-width: 7.5rem;
 }
 
 .deadlines__item-caption {
@@ -5491,6 +5638,143 @@ design_re6 .fancybox__caption {
   margin-top: -3rem;
 }
 
+.repair-cases {
+  padding: 2.125rem 0 1.375rem;
+}
+
+.repair-cases__list {
+  margin-top: 6rem;
+  display: -ms-grid;
+  display: grid;
+  gap: 2.5rem;
+}
+
+.repair-cases__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.repair-cases__item-image {
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding-bottom: 60%;
+}
+
+.repair-cases__item-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.repair-cases__item-body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  border: 0.0625rem solid #34414f;
+  border-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 1rem;
+}
+
+.repair-cases__item-name {
+  color: #ffeab4;
+  line-height: 99%;
+  font-size: 1.75rem;
+}
+
+.repair-cases__item-name sup {
+  font-size: 0.5em;
+  display: inline-block;
+  margin-top: -0.25em;
+}
+
+.repair-cases__item-location {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 99%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.19rem;
+}
+
+.repair-cases__item-location::before {
+  width: 2rem;
+  height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ffeab4;
+  font-size: 1.25rem;
+  color: #232c32;
+  border-radius: 50%;
+}
+
+.repair-cases__item-list {
+  margin-top: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.repair-cases__item-block:not(:last-child) {
+  padding-bottom: 1rem;
+  border-bottom: 0.0625rem solid #34414f;
+}
+
+.repair-cases__item-property {
+  opacity: 0.5;
+  font-size: 1.125rem;
+  line-height: 140%;
+}
+
+.repair-cases__item-value {
+  margin-top: 0.75rem;
+  font-size: 1.5rem;
+  line-height: 100%;
+}
+
+.repair-cases__btn {
+  margin-top: 3.44rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media (min-width: 575.98px) {
   .fancybox__toolbar {
     height: 0px !important;
@@ -5554,6 +5838,10 @@ design_re6 .fancybox__caption {
     top: 1.5rem;
   }
 
+  .widgets {
+    font-size: 2rem;
+  }
+
   .pc-only {
     display: block;
   }
@@ -5573,7 +5861,7 @@ design_re6 .fancybox__caption {
 
   .btn {
     padding: 1.27rem 2.04rem;
-    font-size: 1.52725rem;
+    font-size: 1.5rem;
   }
 
   .header__logo {
@@ -5838,6 +6126,11 @@ design_re6 .fancybox__caption {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .deadlines__list.deadlines__list-lg {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .deadlines__item {
     padding: 1.875rem 1.5rem;
   }
@@ -6023,6 +6316,10 @@ design_re6 .fancybox__caption {
     font-size: 1rem;
     margin-top: -2.5rem;
   }
+
+  .repair-cases__item-name {
+    font-size: 2rem;
+  }
 }
 
 @media (min-width: 767.98px) {
@@ -6096,6 +6393,10 @@ design_re6 .fancybox__caption {
 
   .breadcrumbs {
     padding: 2rem 0 0.75rem;
+  }
+
+  .widgets {
+    font-size: 3rem;
   }
 
   .title-xl {
@@ -7277,6 +7578,15 @@ design_re6 .fancybox__caption {
     gap: 0.375rem;
   }
 
+  .layout__list {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .layout__item-caption {
+    font-size: 1.875rem;
+  }
+
   .deadlines__list {
     -ms-grid-columns: (1fr)[3];
     grid-template-columns: repeat(3, 1fr);
@@ -7389,6 +7699,27 @@ design_re6 .fancybox__caption {
   .why-us__item-icon {
     max-width: 8.7125rem;
     padding: 1.92rem 1.92rem 6.29rem;
+  }
+
+  .repair-cases__list {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .repair-cases__item:nth-child(2n+1) {
+    -webkit-transition-delay: 220ms;
+         -o-transition-delay: 220ms;
+            transition-delay: 220ms;
+  }
+
+  .repair-cases__item:nth-child(2n+2) {
+    -webkit-transition-delay: 440ms;
+         -o-transition-delay: 440ms;
+            transition-delay: 440ms;
+  }
+
+  .repair-cases__item-body {
+    padding: 2.19rem 2.06rem 3.31rem;
   }
 }
 
@@ -7765,10 +8096,34 @@ design_re6 .fancybox__caption {
     max-width: 22.8125rem;
   }
 
+  .deadlines__item:has(.deadlines__item-image) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
   .where__item-column {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 13.75rem;
             flex: 0 0 13.75rem;
+  }
+
+  .repair-cases__item-list {
+    gap: 1.37rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+  .repair-cases__item-block:not(:last-child) {
+    padding-right: 1.37rem;
+    padding-bottom: 0;
+    border-right: 0.0625rem solid #34414f;
+    border-bottom: 0;
   }
 }
 
@@ -8966,6 +9321,15 @@ design_re6 .fancybox__caption {
     right: -1rem;
   }
 
+  .layout {
+    padding: 4.3125rem 0 4.875rem;
+  }
+
+  .layout__list {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .deadlines {
     padding: 5rem 0 2.5rem;
   }
@@ -8980,6 +9344,18 @@ design_re6 .fancybox__caption {
 
   .deadlines__item {
     padding: 2.875rem 1.875rem;
+  }
+
+  .deadlines__item:has(.deadlines__item-image) {
+    padding: 1.25rem 2.0625rem 2.8125rem 2.0625rem;
+  }
+
+  .deadlines__item-column {
+    padding-top: 1.5rem;
+  }
+
+  .deadlines__item-image {
+    max-width: 11.25rem;
   }
 
   .deadlines__item-caption {
@@ -9244,6 +9620,10 @@ design_re6 .fancybox__caption {
   .why-us__item-desc {
     margin-top: -3rem;
     font-size: 1.5rem;
+  }
+
+  .repair-cases__item-name {
+    font-size: 2.5rem;
   }
 }
 
@@ -9722,6 +10102,10 @@ design_re6 .fancybox__caption {
 
   .breadcrumbs__link:hover {
     color: #f7f6f2;
+  }
+
+  .widgets__item:hover {
+    color: #fff1ce;
   }
 
   .title-xl a:hover {

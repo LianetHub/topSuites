@@ -1,5 +1,5 @@
 %ic {
-	font-family: 'icons';
+	font-family: "icons";
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
@@ -10,59 +10,68 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-[class^='icon-'],
-[class*=' icon-'] {
+[class^="icon-"],
+[class*=" icon-"] {
 	&:before {
 		@extend %ic;
 		display: block;
 	}
 }
 
+.icon-calculator:before {
+	content: "\e910";
+}
+.icon-telegram-fill:before {
+	content: "\e911";
+}
+.icon-whatsapp-fill:before {
+	content: "\e912";
+}
 .icon-add:before {
-	content: '\e900';
+	content: "\e900";
 }
 .icon-arrow-bold:before {
-	content: '\e901';
+	content: "\e901";
 }
 .icon-check:before {
-	content: '\e902';
+	content: "\e902";
 }
 .icon-clock:before {
-	content: '\e903';
+	content: "\e903";
 }
 .icon-facebook:before {
-	content: '\e904';
+	content: "\e904";
 }
 .icon-instagram:before {
-	content: '\e905';
+	content: "\e905";
 }
 .icon-left:before {
-	content: '\e906';
+	content: "\e906";
 }
 .icon-location:before {
-	content: '\e907';
+	content: "\e907";
 }
 .icon-mail:before {
-	content: '\e908';
+	content: "\e908";
 }
 .icon-phone:before {
-	content: '\e909';
+	content: "\e909";
 }
 .icon-plus:before {
-	content: '\e90a';
+	content: "\e90a";
 }
 .icon-remove:before {
-	content: '\e90b';
+	content: "\e90b";
 }
 .icon-right:before {
-	content: '\e90c';
+	content: "\e90c";
 }
 .icon-telegram:before {
-	content: '\e90d';
+	content: "\e90d";
 }
 .icon-twitter:before {
-	content: '\e90e';
+	content: "\e90e";
 }
 .icon-youtube:before {
-	content: '\e90f';
+	content: "\e90f";
 }

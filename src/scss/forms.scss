@@ -1,6 +1,6 @@
 .form {
 	&._sending {
-		button[type='submit'] {
+		button[type="submit"] {
 			@extend ._loading;
 		}
 	}
@@ -341,7 +341,7 @@
 			}
 		}
 		&::before {
-			content: '';
+			content: "";
 			position: absolute;
 			top: 50%;
 			transform: translateY(-50%);
@@ -392,7 +392,7 @@
 	padding: 1.15rem 2.04rem;
 	@media (min-width: $md5) {
 		padding: 1.27rem 2.04rem;
-		font-size: 1.52725rem;
+		font-size: 1.5rem;
 	}
 	&.btn-primary {
 		background: #ffeab4;
@@ -404,7 +404,7 @@
 			background: #e3d4ae;
 		}
 		&:disabled,
-		&[aria-disabled='true'] {
+		&[aria-disabled="true"] {
 			background: #ffeab4;
 			color: rgba(0, 0, 0, 0.14);
 		}
@@ -424,7 +424,7 @@
 			color: #fff1ce;
 		}
 		&:disabled,
-		&[aria-disabled='true'] {
+		&[aria-disabled="true"] {
 			border-color: #dfe0e1;
 			color: #dfe0e1;
 		}
@@ -439,7 +439,7 @@
 			background: #232c32;
 		}
 		&:disabled,
-		&[aria-disabled='true'] {
+		&[aria-disabled="true"] {
 			color: #fff;
 			background: #dfe0e1;
 		}
@@ -456,7 +456,7 @@
 			background: #e3d4ae;
 		}
 		&:disabled,
-		&[aria-disabled='true'] {
+		&[aria-disabled="true"] {
 			border-color: #b6bbc0;
 			color: #b6bbc0;
 		}
@@ -482,7 +482,7 @@
 		width: 100%;
 	}
 	&:disabled,
-	&[aria-disabled='true'] {
+	&[aria-disabled="true"] {
 		cursor: default;
 		pointer-events: none;
 	}
@@ -527,7 +527,7 @@
 		cursor: pointer;
 		user-select: none;
 		&::before {
-			content: '';
+			content: "";
 			width: 1.25rem;
 			height: 1.25rem;
 			align-self: flex-start;
@@ -567,7 +567,7 @@
 			font-size: rem(24);
 		}
 		&::before {
-			content: '';
+			content: "";
 			width: rem(22);
 			height: rem(22);
 			border: rem(11) solid #545b63;

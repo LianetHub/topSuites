@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icons';
-  src:  url('fonts/icons.eot?gy66jb');
-  src:  url('fonts/icons.eot?gy66jb#iefix') format('embedded-opentype'),
-    url('fonts/icons.ttf?gy66jb') format('truetype'),
-    url('fonts/icons.woff?gy66jb') format('woff'),
-    url('fonts/icons.svg?gy66jb#icons') format('svg');
+  src:  url('fonts/icons.eot?lqcsab');
+  src:  url('fonts/icons.eot?lqcsab#iefix') format('embedded-opentype'),
+    url('fonts/icons.ttf?lqcsab') format('truetype'),
+    url('fonts/icons.woff?lqcsab') format('woff'),
+    url('fonts/icons.svg?lqcsab#icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-calculator:before {
+  content: "\e910";
+}
+.icon-telegram-fill:before {
+  content: "\e911";
+}
+.icon-whatsapp-fill:before {
+  content: "\e912";
+}
 .icon-add:before {
   content: "\e900";
 }
