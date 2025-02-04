@@ -9,14 +9,6 @@
 }
 
 @font-face {
-  font-family: "icons";
-  font-display: swap;
-  src: url("../fonts/icons-1737989531256.woff") format("woff"), url("../fonts/icons-1737989531256.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "PlusJakartaSans";
   font-display: swap;
   src: url("../fonts/PlusJakartaSans-Bold.woff") format("woff"), url("../fonts/PlusJakartaSans-Bold.woff2") format("woff2");
@@ -25,10 +17,10 @@
 }
 
 @font-face {
-  font-family: "PlusJakartaSans";
+  font-family: "icons";
   font-display: swap;
-  src: url("../fonts/PlusJakartaSans-ExtraLight.woff") format("woff"), url("../fonts/PlusJakartaSans-ExtraLight.woff2") format("woff2");
-  font-weight: 200;
+  src: url("../fonts/icons-1738692379444.woff") format("woff"), url("../fonts/icons-1738692379444.woff2") format("woff2");
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -43,8 +35,24 @@
 @font-face {
   font-family: "PlusJakartaSans";
   font-display: swap;
+  src: url("../fonts/PlusJakartaSans-ExtraLight.woff") format("woff"), url("../fonts/PlusJakartaSans-ExtraLight.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PlusJakartaSans";
+  font-display: swap;
   src: url("../fonts/PlusJakartaSans-Medium.woff") format("woff"), url("../fonts/PlusJakartaSans-Medium.woff2") format("woff2");
   font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PlusJakartaSans";
+  font-display: swap;
+  src: url("../fonts/PlusJakartaSans-Regular.woff") format("woff"), url("../fonts/PlusJakartaSans-Regular.woff2") format("woff2");
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -65,50 +73,10 @@
 }
 
 @font-face {
-  font-family: "PlusJakartaSans";
-  font-display: swap;
-  src: url("../fonts/PlusJakartaSans-Regular.woff") format("woff"), url("../fonts/PlusJakartaSans-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Raleway";
-  font-display: swap;
-  src: url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.woff2") format("woff2");
-  font-weight: 800;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "Raleway";
   font-display: swap;
   src: url("../fonts/Raleway-ExtraLight.woff") format("woff"), url("../fonts/Raleway-ExtraLight.woff2") format("woff2");
   font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Raleway";
-  font-display: swap;
-  src: url("../fonts/Raleway-Medium.woff") format("woff"), url("../fonts/Raleway-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Raleway";
-  font-display: swap;
-  src: url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Raleway";
-  font-display: swap;
-  src: url("../fonts/Raleway-SemiBold.woff") format("woff"), url("../fonts/Raleway-SemiBold.woff2") format("woff2");
-  font-weight: 600;
   font-style: normal;
 }
 
@@ -123,8 +91,40 @@
 @font-face {
   font-family: "Raleway";
   font-display: swap;
+  src: url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-display: swap;
+  src: url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-display: swap;
+  src: url("../fonts/Raleway-Medium.woff") format("woff"), url("../fonts/Raleway-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-display: swap;
   src: url("../fonts/Raleway-Light.woff") format("woff"), url("../fonts/Raleway-Light.woff2") format("woff2");
   font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-display: swap;
+  src: url("../fonts/Raleway-SemiBold.woff") format("woff"), url("../fonts/Raleway-SemiBold.woff2") format("woff2");
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -7520,16 +7520,14 @@ design_re6 .fancybox__caption {
   }
 
   .service-page__list {
-    -webkit-columns: 3;
-       -moz-columns: 3;
-            columns: 3;
-    -webkit-column-rule: 0.0625rem solid rgba(255, 255, 255, 0.24);
-       -moz-column-rule: 0.0625rem solid rgba(255, 255, 255, 0.24);
-            column-rule: 0.0625rem solid rgba(255, 255, 255, 0.24);
-    -webkit-column-gap: 3rem;
-       -moz-column-gap: 3rem;
-            column-gap: 3rem;
+    -webkit-column-gap: 1.5rem;
+       -moz-column-gap: 1.5rem;
+            column-gap: 1.5rem;
     max-width: 39.375rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .service-page__item {
@@ -7541,6 +7539,11 @@ design_re6 .fancybox__caption {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+
+  .service-page__item:not(:last-child) {
+    border-right: 0.0625rem solid rgba(255, 255, 255, 0.24);
+    padding-right: 1.5rem;
   }
 
   .service-page__item::before {
@@ -9226,16 +9229,20 @@ design_re6 .fancybox__caption {
 
   .service-page__list {
     max-width: 67.1875rem;
-    -webkit-column-gap: 4.75rem;
-       -moz-column-gap: 4.75rem;
-            column-gap: 4.75rem;
+    -webkit-column-gap: 2.375rem;
+       -moz-column-gap: 2.375rem;
+            column-gap: 2.375rem;
     margin-top: 1rem;
   }
 
   .service-page__item {
-    max-width: 18.125rem;
+    max-width: 20.5rem;
     line-height: 99%;
     font-size: 1.5rem;
+  }
+
+  .service-page__item:not(:last-child) {
+    padding-right: 2.375rem;
   }
 
   .service-page__btns {
