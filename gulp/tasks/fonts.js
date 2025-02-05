@@ -70,6 +70,10 @@ export const copyWoff = () => {
 export const fontsStyle = () => {
     let fontsFile = `${app.path.srcFolder}/scss/fonts.scss`;
 
+    if (fs.existsSync(fontsFile)) {
+        fs.unlinkSync(fontsFile);
+    }
+
     fs.readdir(app.path.build.fonts, function (err, fontsFiles) {
         if (fontsFiles) {
             if (!fs.existsSync(fontsFile)) {
