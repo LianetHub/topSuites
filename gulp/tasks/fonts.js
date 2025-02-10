@@ -118,7 +118,7 @@ export const fontsStyle = () => {
                             `@font-face {
                                 font-family: '${fontName}';
                                 font-display: swap;
-                                src: url("../fonts/${fontFileName === "icons" ? `${fontFileName}-${currentDate}` : fontFileName}.woff") format("woff"), url("../fonts/${fontFileName === "icons" ? `${fontFileName}-${Date.now()}` : fontFileName}.woff2") format("woff2");
+                                src: url("../fonts/${fontFileName === "icons" ? `${fontFileName}-${currentDate}` : fontFileName}.woff2") format("woff2"), url("../fonts/${fontFileName === "icons" ? `${fontFileName}-${Date.now()}` : fontFileName}.woff") format("woff");
                                 font-weight: ${fontWeight};
                                 font-style: normal;
                             }\r\n`, cb);
